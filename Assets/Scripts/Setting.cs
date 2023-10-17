@@ -5,20 +5,20 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Settings : MonoBehaviour
+public class Setting : MonoBehaviour
 {
     public GameObject SettingPop;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnClick()
