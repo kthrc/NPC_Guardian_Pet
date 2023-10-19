@@ -32,5 +32,33 @@ public class Setting : MonoBehaviour
 
             SettingPop.SetActive(true);
         }
+
+        if (clickObject.name == "XBtn") //
+        {
+            //SceneManager.LoadScene(""); //
+
+            SettingPop.SetActive(false);
+        }
+
+        if (clickObject.name == "SoundBtn") //
+        {
+            //SceneManager.LoadScene(""); //
+
+            
+        }
+
+        if (clickObject.name == "NotiBtn") //
+        {
+            //SceneManager.LoadScene(""); //
+
+           
+        }
+
+        if (clickObject.name == "CardBtn") //
+        {
+            //SceneManager.LoadScene(""); //
+
+            
+        }
     }
 }
