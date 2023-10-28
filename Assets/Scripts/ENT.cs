@@ -1,0 +1,216 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class ENT : MonoBehaviour
+{
+    // Card Choice
+    public GameObject ENTCard1;
+    public GameObject ENTCard2;
+    public GameObject ENTCard3;
+
+    public GameObject SelectedCard;
+    public GameObject Book;
+
+    // Card -> Book
+    public GameObject BookStart1;
+    public GameObject BookStart2;
+    public GameObject BookStart3;
+
+    // Book -> Mission
+    public GameObject Mission1;
+    public GameObject Mission2;
+    public GameObject Mission3;
+
+    // Mission -> BookEnding
+    public GameObject BookEnding1;
+    public GameObject BookEnding2;
+    public GameObject BookEnding3;
+
+    // BookEnding -> Success(Get Card!)
+    public GameObject Success1;
+    public GameObject Success2;
+    public GameObject Success3;
+
+    public int cnt = 0;
+
+    /* float screenHeightHalf = Camera.main.orthographicSize;
+     float screenWidthHalf = screenHeightHalf * Camera.main.aspect;*/
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void OnClick()
+    {
+        GameObject clickObject = EventSystem.current.currentSelectedGameObject;
+
+        // choice 1
+        if (cnt == 0 && clickObject.name == "ENTCard1") //
+        {
+            ENTCard1.SetActive(false);
+            ENTCard2.SetActive(false);
+            ENTCard3.SetActive(false);
+
+            SelectedCard = ENTCard1;
+
+            /*tmp = SelectedCard;
+            SelectedCard = ENTCard1;
+            ENTCard1 = tmp;*/
+
+            //SelectedCard.position = new Vector2(0, 0);
+            //크기 및 위치
+            Vector3 position = SelectedCard.transform.localPosition;
+            position.x = 0;
+            position.y = 0;
+            SelectedCard.transform.localPosition = position;
+            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+            SelectedCard.SetActive(true);
+            //cnt = 1;
+
+
+        }
+
+        // choice 2
+        if (cnt == 0 && clickObject.name == "ENTCard2") //
+        {
+            ENTCard1.SetActive(false);
+            ENTCard2.SetActive(false);
+            ENTCard3.SetActive(false);
+
+            SelectedCard = ENTCard2;
+            //SelectedCard.position = new Vector2(0, 0);
+            Vector3 position = SelectedCard.transform.localPosition;
+            position.x = 0;
+            position.y = 0;
+            SelectedCard.transform.localPosition = position;
+            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+            SelectedCard.SetActive(true);
+        }
+
+        // choice 3
+        if (cnt == 0 && clickObject.name == "ENTCard3") //
+        {
+            ENTCard1.SetActive(false);
+            ENTCard2.SetActive(false);
+            ENTCard3.SetActive(false);
+
+            SelectedCard = ENTCard3;
+            //SelectedCard.position = new Vector2(0, 0);
+            Vector3 position = SelectedCard.transform.localPosition;
+            position.x = 0;
+            position.y = 0;
+            SelectedCard.transform.localPosition = position;
+            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+            SelectedCard.SetActive(true);
+        }
+
+        cnt++;
+        Debug.Log("Click " + cnt);
+        if (cnt == 2)
+        {
+
+            OnDoubleClick();
+        }
+    }
+
+    public void OnDoubleClick()
+    {
+        Debug.Log("Double Click " + cnt);
+
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        // Choice Card1
+        if (clickObj.name == "ENTCard1" && SelectedCard == ENTCard1 && cnt == 2) //
+        {
+            ENTCard1.SetActive(false);
+            ENTCard2.SetActive(false);
+            ENTCard3.SetActive(false);
+
+            SelectedCard = ENTCard1;
+            //SelectedCard.position = new Vector2(0, 0);
+            Vector3 position = SelectedCard.transform.localPosition;
+            position.x = 100;
+            position.y = 950;
+            SelectedCard.transform.localPosition = position;
+
+            //병원 아이콘 옆에 놓기
+            transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+            SelectedCard.SetActive(true);
+
+            //팝업 책 
+            Book.SetActive(true);
+
+        }
+        // Choice Card2
+        if (clickObj.name == "ENTCard2" && SelectedCard == ENTCard2 && cnt == 2) //
+        {
+            ENTCard1.SetActive(false);
+            ENTCard2.SetActive(false);
+            ENTCard3.SetActive(false);
+
+            SelectedCard = ENTCard2;
+            //SelectedCard.position = new Vector2(0, 0);
+            Vector3 position = SelectedCard.transform.localPosition;
+            position.x = 100;
+            position.y = 950;
+            SelectedCard.transform.localPosition = position;
+
+            transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+            SelectedCard.SetActive(true);
+
+            //팝업 책 
+            Book.SetActive(true);
+
+        }
+        // Choice Card3
+        if (clickObj.name == "ENTCard3" && SelectedCard == ENTCard3 && cnt == 2) //
+        {
+            ENTCard1.SetActive(false);
+            ENTCard2.SetActive(false);
+            ENTCard3.SetActive(false);
+
+            SelectedCard = ENTCard3;
+            //SelectedCard.position = new Vector2(0, 0);
+            Vector3 position = SelectedCard.transform.localPosition;
+            position.x = 100;
+            position.y = 950;
+            SelectedCard.transform.localPosition = position;
+
+            transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+            SelectedCard.SetActive(true);
+
+            //팝업 책 
+            Book.SetActive(true);
+
+        }
+        cnt++;
+    }
+
+    public void OnNextClick()
+    {
+        GameObject obj = EventSystem.current.currentSelectedGameObject;
+
+        if (obj.name == "BookNextBtn") //
+        {
+            //SelectedCard.SetActive(true);
+        }
+    }
+}
