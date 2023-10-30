@@ -16,7 +16,7 @@ public class Dental : MonoBehaviour
     public GameObject Book;
 
     // Card -> Book
-    public GameObject BookStart1;
+    public GameObject[] BookStart1;
     public GameObject BookStart2;
     public GameObject BookStart3;
 
@@ -36,6 +36,7 @@ public class Dental : MonoBehaviour
     public GameObject Success3;
 
     public int cnt = 0;
+    public static int index = 0;
 
    /* float screenHeightHalf = Camera.main.orthographicSize;
     float screenWidthHalf = screenHeightHalf * Camera.main.aspect;*/
@@ -153,9 +154,15 @@ public class Dental : MonoBehaviour
 
             SelectedCard.SetActive(true);
 
-            //팝업 책 
+            //팝업 책 (회색 배경)
             Book.SetActive(true);
+            BookStart1[0].SetActive(true);
+            //BookStart1.SetActive(true);
 
+            /*foreach (GameObject obj in BookStart1)
+            {
+                obj.SetActive(true);
+            }*/
         }
         // Choice Card2
         if (clickObj.name == "DentalCard2" && SelectedCard == DentalCard2 && cnt == 2) //
@@ -199,18 +206,32 @@ public class Dental : MonoBehaviour
 
             //팝업 책 
             Book.SetActive(true);
-
+            //BookNextBtn.SetActive(true);
         }
         cnt++;
     }
 
+    //BookStart 함수(카드 선택 후 이야기 진행!)
     public void OnNextClick()
     {
         GameObject obj = EventSystem.current.currentSelectedGameObject;
+        //cnt = 0;
+        //index = 0;
+        //index++;
+        // 일단 출력
+        //BookStart1[index].SetActive(true);
 
+        //index++;
         if (obj.name == "BookNextBtn") //
         {
-            //SelectedCard.SetActive(true);
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+            
+            BookStart1[index].SetActive(false);
+            index++;
+            BookStart1[index].SetActive(true);
+           
+            //if(index == 3) 스토리 끝나면 
         }
     }
 }

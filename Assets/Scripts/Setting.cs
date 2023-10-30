@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class Setting : MonoBehaviour
 {
     public GameObject SettingPop;
+    public GameObject SoundPop;
 
     // Start is called before the first frame update
     void Start()
@@ -28,36 +29,34 @@ public class Setting : MonoBehaviour
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
         if (clickObject.name == "SettingBtn") //
         {
-            //SceneManager.LoadScene(""); //
-
+          
             SettingPop.SetActive(true);
         }
 
         if (clickObject.name == "XBtn") //
         {
-            //SceneManager.LoadScene(""); //
-
             SettingPop.SetActive(false);
         }
 
         if (clickObject.name == "SoundBtn") //
         {
-            //SceneManager.LoadScene(""); //
+            SettingPop.SetActive(false);
+            SoundPop.SetActive(true);
 
-            
         }
-
+        if (clickObject.name == "SoundXBtn") //
+        {
+            SoundPop.SetActive(false);
+        }
         if (clickObject.name == "NotiBtn") //
         {
-            //SceneManager.LoadScene(""); //
-
+           
            
         }
 
         if (clickObject.name == "CardBtn") //
         {
-            //SceneManager.LoadScene(""); //
-
+           
             
         }
     }
