@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,10 +34,10 @@ public class SoundManager : MonoBehaviour
         switch (type)
         {
             case "Click":
-                Debug.Log("Å¬¸¯ È¿°úÀ½ Àç»ı");
+                Debug.Log("í´ë¦­ íš¨ê³¼ìŒ ì¬ìƒ");
                 index = 0; break;
             case "Main":
-                Debug.Log("ÀüÃ¼ ¹è°æÀ½ Àç»ı");
+                Debug.Log("ì „ì²´ ë°°ê²½ìŒ ì¬ìƒ");
                 index = 1; break;
            
         }

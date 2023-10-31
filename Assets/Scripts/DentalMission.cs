@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,58 +7,177 @@ using UnityEngine.SceneManagement;
 
 public class DentalMission : MonoBehaviour
 {
-    public GameObject M1; // M1 ¿ÀºêÁ§Æ®
+    public GameObject M1; // M1 ì˜¤ë¸Œì íŠ¸
+    public GameObject M2;
+    public GameObject M3;
 
-    public GameObject M1_Eye; // ¹Ì¼Ç 1 (º´¿ø ¸ÂÃß±â)
+    public GameObject M1_Eye; // ë¯¸ì…˜ 1 (ë³‘ì› ë§ì¶”ê¸°)
     public GameObject M1_ENT;
     public GameObject M1_Dental;
 
-    public GameObject M1_OBtn; // ¸Â¾Ò´ÂÁö ¾Æ´ÑÁö OX Ãâ·Â
+    public GameObject M1_OBtn; // ë§ì•˜ëŠ”ì§€ ì•„ë‹Œì§€ OX ì¶œë ¥(M1)
     public GameObject M1_XBtn1;
     public GameObject M1_XBtn2;
 
-    public Text GuardianPetText; // Æ²·ÈÀ» ¶§ Æê ¸» º¯°æ
+    public Text GuardianPetText; // í‹€ë ¸ì„ ë•Œ í« ë§ ë³€ê²½
 
-    public int M1_end = 0; // flag °ª
+    // public int M1_end = 0; // flag ê°’
+
+    public GameObject M2_O; // M2(OXí€´ì¦ˆ) OX ë²„íŠ¼
+    public GameObject M2_X;
+
+    //public int _rotSpeed = 60; // ì§„ë™ íš¨ê³¼ ìœ„í•´ì„œ ë„£ì–´ë†“ìŒ
+
+    public GameObject M3_DCard1; // M3(ì¦ìƒì¹´ë“œ) ì¦ìƒì¹´ë“œ
+    public GameObject M3_DCard2;
+    public GameObject M3_DCard3;
+
+    public GameObject M3_OBtn; // ë§ì•˜ëŠ”ì§€ ì•„ë‹Œì§€ OX ì¶œë ¥(M3)
+    public GameObject M3_XBtn1;
+    public GameObject M3_XBtn2;
+
+    public GameObject Success1; // í« íšë“ ì˜¤ë¸Œì íŠ¸
+    public GameObject Success2;
+    public GameObject Success3;
+
+    Vector2 startingPos; // ì§„ë™ íš¨ê³¼ ìœ„í•´ì„œ ë„£ì–´ë†“ìŒ222 (êµ¬í˜„ ì•ˆ ë¨ ã… )
+
+    void Awake()
+    {
+        startingPos.x = transform.position.x;
+        startingPos.y = transform.position.y;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnM1Click()
     {
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
-        if(M1_end == 1) // flag end °ª 1ÀÌ¸é Á¾·á
+        /*if(M1_end == 1) // flag end ê°’ 1ì´ë©´ ì¢…ë£Œ
         {
             M1.SetActive(false);
 
-        }
-        if(clickObject == M1_Eye) // X Ãâ·ÂÇÏ°í ÆêÀÌ ¼³¸íÇØÁà¾ßµÊ
+        }*/
+        if (clickObject == M1_Eye) // X ì¶œë ¥í•˜ê³  í«ì´ ì„¤ëª…í•´ì¤˜ì•¼ë¨
         {
-            M1_XBtn1.SetActive(true); //XÃâ·Â
-            GuardianPetText.text = "´Ù½Ã ÇÑ ¹ø »ı°¢ÇØºÁ";
+            M1_XBtn1.SetActive(true); //Xì¶œë ¥
+            GuardianPetText.text = "ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë´";
         }
 
-        if (clickObject == M1_ENT) // X Ãâ·ÂÇÏ°í ÆêÀÌ ¼³¸íÇØÁà¾ßµÊ
+        if (clickObject == M1_ENT) // X ì¶œë ¥í•˜ê³  í«ì´ ì„¤ëª…í•´ì¤˜ì•¼ë¨
         {
-            M1_XBtn2.SetActive(true); //XÃâ·Â
-            GuardianPetText.text = "´Ù½Ã ÇÑ ¹ø »ı°¢ÇØºÁ";
+            M1_XBtn2.SetActive(true); //Xì¶œë ¥
+            GuardianPetText.text = "ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë´";
         }
 
-        if (clickObject == M1_Dental) // O Ãâ·Â
+        if (clickObject == M1_Dental) // O ì¶œë ¥
         {
             M1_OBtn.SetActive(true); //
-            GuardianPetText.text = "ÀßÇß¾î!(ÀÓ½Ã)"; // ¹º°¡ ÇãÀüÇØ¼­ ±×³É Ãß°¡..
 
-            M1_end = 1; // flag °ª
+            /*M1_end = 1; // flag ê°’
+            M1.SetActive(false);
+
+            M2.SetActive(true);*/
+
+            Invoke("M1ToM2", 0.2f); // ì‹œê°„ ì°¨ë¥¼ ì£¼ê³  NextMission ìœ¼ë¡œ ë„˜ê¹€
+        }
+
+    }
+    public void M1ToM2() //M1->M2 Mission1ì—ì„œ Mission2ê°€ ì•„ë‹ ê²½ìš° ìˆ˜ì •í•˜ë©´ ë¨
+    {
+        M1.SetActive(false);
+
+        M2.SetActive(true);
+    }
+
+    //M2
+    public void OnM2Click()
+    {
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        // O ë²„íŠ¼ ì„ íƒ ì‹œ ->  ì •ë‹µ
+        if (clickObj == M2_O)
+        {
+            M2_X.SetActive(false);
+
+            GuardianPetText.text = "";
+
+            Vector3 position = M2_O.transform.localPosition;
+            position.x = 1780;
+            position.y = 1870;
+            M2_O.transform.localPosition = position;
+
+            // ì‚½ì…ëœ ë¯¸ì…˜ -> ë‹¤ì‹œ ì±…ìœ¼ë¡œ ëŒì•„ê°
+
+
+            // ì±…ì„ ë‹¤ ì½ì€ ë’¤ -> í« íšë“ UIë¡œ ë„˜ì–´ê°
+
+
+        }
+
+        // X ë²„íŠ¼ ì„ íƒ ì‹œ -> ì§„ë™ íš¨ê³¼ ì–´ë–»ê²Œ..?
+        if (clickObj == M2_X)
+        {
+            GuardianPetText.text = "ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë´";
+            /*
+                        M2_X.transform.position.x = startingPos.x + (Mathf.Sin(Time.time * 1) * 1);
+
+                        M2_X.transform.position.y = startingPos.y + (Mathf.Sin(Time.time * 1) * 1);
+            */
+
+
+            Vector3 position = M2_X.transform.localPosition;
+            position.x = 2500;
+            position.y = 1870;
+            M2_X.transform.localPosition = position;
+            transform.localScale = new Vector3(3f, 3f, 3f);
+
+        }
+    }
+
+    //M3
+    public void OnM3Click()
+    {
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        if (clickObj == M3_DCard1)
+        {
+
+            M3_XBtn1.SetActive(true); //Xì¶œë ¥
+
+            GuardianPetText.text = "ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë´";
+        }
+
+        if (clickObj == M3_DCard2) // -> ì •ë‹µ
+        {
+
+            M3_OBtn.SetActive(true); //Oì¶œë ¥
+
+            GuardianPetText.text = "";
+
+            // ë‹¤ìŒìœ¼ë¡œ ë„˜ì–´ê° (í« íšë“ UI!)
+            M3.SetActive(false);
+            Success1.SetActive(true);
+
+        }
+
+        if (clickObj == M3_DCard3)
+        {
+
+            M3_XBtn2.SetActive(true); //Xì¶œë ¥
+
+            GuardianPetText.text = "ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë´";
         }
     }
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -71,7 +71,7 @@ public class Dental : MonoBehaviour
             DentalCard1 = tmp;*/
 
             //SelectedCard.position = new Vector2(0, 0);
-            //Å©±â ¹× À§Ä¡
+            //í¬ê¸° ë° ìœ„ì¹˜
             Vector3 position = SelectedCard.transform.localPosition;
             position.x = 0;
             position.y = 0;
@@ -149,12 +149,12 @@ public class Dental : MonoBehaviour
             position.y = 950;
             SelectedCard.transform.localPosition = position;
 
-            //º´¿ø ¾ÆÀÌÄÜ ¿·¿¡ ³õ±â
+            //ë³‘ì› ì•„ì´ì½˜ ì˜†ì— ë†“ê¸°
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
             SelectedCard.SetActive(true);
 
-            //ÆË¾÷ Ã¥ (È¸»ö ¹è°æ)
+            //íŒì—… ì±… (íšŒìƒ‰ ë°°ê²½)
             Book.SetActive(true);
             BookStart1[0].SetActive(true);
             //BookStart1.SetActive(true);
@@ -182,7 +182,7 @@ public class Dental : MonoBehaviour
 
             SelectedCard.SetActive(true);
 
-            //ÆË¾÷ Ã¥ 
+            //íŒì—… ì±… 
             Book.SetActive(true);
 
         }
@@ -204,34 +204,34 @@ public class Dental : MonoBehaviour
 
             SelectedCard.SetActive(true);
 
-            //ÆË¾÷ Ã¥ 
+            //íŒì—… ì±… 
             Book.SetActive(true);
             //BookNextBtn.SetActive(true);
         }
         cnt++;
     }
 
-    //BookStart ÇÔ¼ö(Ä«µå ¼±ÅÃ ÈÄ ÀÌ¾ß±â ÁøÇà!)
+    //BookStart í•¨ìˆ˜(ì¹´ë“œ ì„ íƒ í›„ ì´ì•¼ê¸° ì§„í–‰!)
     public void OnNextClick()
     {
         GameObject obj = EventSystem.current.currentSelectedGameObject;
         //cnt = 0;
         //index = 0;
         //index++;
-        // ÀÏ´Ü Ãâ·Â
+        // ì¼ë‹¨ ì¶œë ¥
         //BookStart1[index].SetActive(true);
 
         //index++;
         if (obj.name == "BookNextBtn") //
         {
-            Debug.Log("Å¬¸¯ ÀÛµ¿");
+            Debug.Log("í´ë¦­ ì‘ë™");
             Debug.Log(index);
             
             BookStart1[index].SetActive(false);
             index++;
             BookStart1[index].SetActive(true);
            
-            //if(index == 3) ½ºÅä¸® ³¡³ª¸é 
+            //if(index == 3) ìŠ¤í† ë¦¬ ëë‚˜ë©´ 
         }
     }
 }
