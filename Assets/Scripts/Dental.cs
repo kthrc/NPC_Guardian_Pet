@@ -16,9 +16,9 @@ public class Dental : MonoBehaviour
     public GameObject Book;
 
     // Card -> Book
-    public GameObject[] BookStart1;
-    public GameObject BookStart2;
-    public GameObject BookStart3;
+    public GameObject[] BookStart;
+   /* public GameObject[] BookStart2;
+    public GameObject[] BookStart3;*/
 
     // Book -> Mission
     public GameObject Mission1;
@@ -38,8 +38,6 @@ public class Dental : MonoBehaviour
     public int cnt = 0;
     public static int index = 0;
 
-   /* float screenHeightHalf = Camera.main.orthographicSize;
-    float screenWidthHalf = screenHeightHalf * Camera.main.aspect;*/
     
     // Start is called before the first frame update
     void Start()
@@ -66,11 +64,6 @@ public class Dental : MonoBehaviour
 
             SelectedCard = DentalCard1;
             
-            /*tmp = SelectedCard;
-            SelectedCard = DentalCard1;
-            DentalCard1 = tmp;*/
-
-            //SelectedCard.position = new Vector2(0, 0);
             //크기 및 위치
             Vector3 position = SelectedCard.transform.localPosition;
             position.x = 0;
@@ -144,6 +137,8 @@ public class Dental : MonoBehaviour
 
             SelectedCard = DentalCard1;
             //SelectedCard.position = new Vector2(0, 0);
+
+            // 선택된 카드 x, y 값 포지션 값 변경
             Vector3 position = SelectedCard.transform.localPosition;
             position.x = 100;
             position.y = 950;
@@ -155,14 +150,12 @@ public class Dental : MonoBehaviour
             SelectedCard.SetActive(true);
 
             //팝업 책 (회색 배경)
+            SelectedCard.SetActive(false);
             Book.SetActive(true);
-            BookStart1[0].SetActive(true);
+            /*BookStart[0].SetActive(true);
+            SelectedCard.SetActive(false);*/
             //BookStart1.SetActive(true);
 
-            /*foreach (GameObject obj in BookStart1)
-            {
-                obj.SetActive(true);
-            }*/
         }
         // Choice Card2
         if (clickObj.name == "DentalCard2" && SelectedCard == DentalCard2 && cnt == 2) //
@@ -183,8 +176,12 @@ public class Dental : MonoBehaviour
             SelectedCard.SetActive(true);
 
             //팝업 책 
+            //Book.SetActive(true);
+          /*  BookStart[0].SetActive(true);
+            SelectedCard.SetActive(false);
+*/
+            SelectedCard.SetActive(false);
             Book.SetActive(true);
-
         }
         // Choice Card3
         if (clickObj.name == "DentalCard3" && SelectedCard == DentalCard3 && cnt == 2) //
@@ -203,10 +200,16 @@ public class Dental : MonoBehaviour
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
             SelectedCard.SetActive(true);
+/*
+            BookStart[0].SetActive(true);
+            SelectedCard.SetActive(false);*/
 
             //팝업 책 
-            Book.SetActive(true);
+            //Book.SetActive(true);
             //BookNextBtn.SetActive(true);
+
+            SelectedCard.SetActive(false);
+            Book.SetActive(true);
         }
         cnt++;
     }
@@ -221,17 +224,43 @@ public class Dental : MonoBehaviour
         // 일단 출력
         //BookStart1[index].SetActive(true);
 
+       
+
         //index++;
         if (obj.name == "BookNextBtn") //
         {
             Debug.Log("클릭 작동");
             Debug.Log(index);
             
-            BookStart1[index].SetActive(false);
+            BookStart[index].SetActive(false);
             index++;
-            BookStart1[index].SetActive(true);
+            BookStart[index].SetActive(true);
            
             //if(index == 3) 스토리 끝나면 
         }
+        /*
+        if (obj.name == "BookNextBtn2") //
+        {
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart2[index].SetActive(false);
+            index++;
+            BookStart2[index].SetActive(true);
+
+            //if(index == 3) 스토리 끝나면 
+        }
+
+        if (obj.name == "BookNextBtn3") //
+        {
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart3[index].SetActive(false);
+            index++;
+            BookStart3[index].SetActive(true);
+
+            //if(index == 3) 스토리 끝나면 
+        }*/
     }
 }
