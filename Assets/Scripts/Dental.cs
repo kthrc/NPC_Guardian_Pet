@@ -16,7 +16,7 @@ public class Dental : MonoBehaviour
     public GameObject Book;
 
     // Card -> Book
-    public GameObject[] BookStart;
+    public GameObject[] BookStart; // static
    /* public GameObject[] BookStart2;
     public GameObject[] BookStart3;*/
 
@@ -128,7 +128,7 @@ public class Dental : MonoBehaviour
 
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
-        // Choice Card1
+        // Choice Card1 증상카드1
         if (clickObj.name == "DentalCard1" && SelectedCard == DentalCard1 && cnt == 2) //
         {
             DentalCard1.SetActive(false);
@@ -157,7 +157,7 @@ public class Dental : MonoBehaviour
             //BookStart1.SetActive(true);
 
         }
-        // Choice Card2
+        // Choice Card2 증상카드 2
         if (clickObj.name == "DentalCard2" && SelectedCard == DentalCard2 && cnt == 2) //
         {
             DentalCard1.SetActive(false);
@@ -183,7 +183,7 @@ public class Dental : MonoBehaviour
             SelectedCard.SetActive(false);
             Book.SetActive(true);
         }
-        // Choice Card3
+        // Choice Card3 증상카드 3
         if (clickObj.name == "DentalCard3" && SelectedCard == DentalCard3 && cnt == 2) //
         {
             DentalCard1.SetActive(false);
@@ -214,18 +214,19 @@ public class Dental : MonoBehaviour
         cnt++;
     }
 
+    public void B1ToM1() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
+    {
+        Book.SetActive(false);
+       
+        Mission1.SetActive(true);
+
+    }
+
     //BookStart 함수(카드 선택 후 이야기 진행!)
     public void OnNextClick()
     {
         GameObject obj = EventSystem.current.currentSelectedGameObject;
-        //cnt = 0;
-        //index = 0;
-        //index++;
-        // 일단 출력
-        //BookStart1[index].SetActive(true);
-
        
-
         //index++;
         if (obj.name == "BookNextBtn") //
         {
@@ -234,33 +235,16 @@ public class Dental : MonoBehaviour
             
             BookStart[index].SetActive(false);
             index++;
-            BookStart[index].SetActive(true);
-           
-            //if(index == 3) 스토리 끝나면 
+            if (index != 3)
+            {
+                BookStart[index].SetActive(true);
+            }
+            if(index == 3) //스토리 끝나면 
+            {
+                Invoke("B1ToM1", 0.02f);
+                index = 0;
+            }
         }
-        /*
-        if (obj.name == "BookNextBtn2") //
-        {
-            Debug.Log("클릭 작동");
-            Debug.Log(index);
-
-            BookStart2[index].SetActive(false);
-            index++;
-            BookStart2[index].SetActive(true);
-
-            //if(index == 3) 스토리 끝나면 
-        }
-
-        if (obj.name == "BookNextBtn3") //
-        {
-            Debug.Log("클릭 작동");
-            Debug.Log(index);
-
-            BookStart3[index].SetActive(false);
-            index++;
-            BookStart3[index].SetActive(true);
-
-            //if(index == 3) 스토리 끝나면 
-        }*/
+        
     }
 }

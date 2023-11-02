@@ -9,7 +9,7 @@ public class DentalMission : MonoBehaviour
 {
     public GameObject M1; // M1 오브젝트
     public GameObject M2;
-    public GameObject M3;
+    public GameObject M3; 
 
     public GameObject M1_Eye; // 미션 1 (병원 맞추기)
     public GameObject M1_ENT;
@@ -62,6 +62,7 @@ public class DentalMission : MonoBehaviour
 
     public void OnM1Click()
     {
+
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
         /*if(M1_end == 1) // flag end 값 1이면 종료
@@ -100,7 +101,12 @@ public class DentalMission : MonoBehaviour
 
         M2.SetActive(true);
     }
+    public void M2ToM3() //M2->M3  
+    { 
+        M2.SetActive(false);
 
+        M3.SetActive(true);
+    }
     //M2
     public void OnM2Click()
     {
@@ -118,6 +124,8 @@ public class DentalMission : MonoBehaviour
             position.y = 1870;
             M2_O.transform.localPosition = position;
 
+
+            Invoke("M2ToM3", 0.2f); // 시간 차를 주고 NextMission 으로 넘김
             // 삽입된 미션 -> 다시 책으로 돌아감
 
 
@@ -162,13 +170,13 @@ public class DentalMission : MonoBehaviour
         if (clickObj == M3_DCard2) // -> 정답
         {
 
-            M3_OBtn.SetActive(true); //O출력
+            M3_OBtn.SetActive(true); // O출력
 
             GuardianPetText.text = "";
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            Success1.SetActive(true);
+            Success1.SetActive(true); // -> 
 
         }
 
