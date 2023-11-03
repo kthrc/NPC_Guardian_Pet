@@ -16,7 +16,7 @@ public class Dental : MonoBehaviour
     public GameObject Book;
 
     // Card -> Book
-    public GameObject[] BookStart; // static
+    public GameObject[] BookStart; // 
    /* public GameObject[] BookStart2;
     public GameObject[] BookStart3;*/
 
@@ -24,6 +24,12 @@ public class Dental : MonoBehaviour
     public GameObject Mission1;
     public GameObject Mission2;
     public GameObject Mission3;
+    public GameObject Mission4;
+    public GameObject Mission5;
+    public GameObject Mission6;
+    public GameObject Mission7;
+    public GameObject Mission8;
+    public GameObject Mission9;
 
     // Mission -> BookEnding
     public GameObject BookEnding1;
@@ -151,7 +157,7 @@ public class Dental : MonoBehaviour
 
             //팝업 책 (회색 배경)
             SelectedCard.SetActive(false);
-            Book.SetActive(true);
+            Book.SetActive(true); // 스토리로 이동
             /*BookStart[0].SetActive(true);
             SelectedCard.SetActive(false);*/
             //BookStart1.SetActive(true);
@@ -181,7 +187,7 @@ public class Dental : MonoBehaviour
             SelectedCard.SetActive(false);
 */
             SelectedCard.SetActive(false);
-            Book.SetActive(true);
+            Book.SetActive(true); // 스토리로 이동
         }
         // Choice Card3 증상카드 3
         if (clickObj.name == "DentalCard3" && SelectedCard == DentalCard3 && cnt == 2) //
@@ -209,33 +215,87 @@ public class Dental : MonoBehaviour
             //BookNextBtn.SetActive(true);
 
             SelectedCard.SetActive(false);
-            Book.SetActive(true);
+            Book.SetActive(true); // 스토리로 이동
         }
         cnt++;
     }
 
     public void B1ToM1() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
     {
+       //이야기 1에서 미션1로 넘어감
         Book.SetActive(false);
        
         Mission1.SetActive(true);
 
-    }
+        // 책 -> 미션 후에 병원 아이콘 옆에 생기는 선택된 카드 아이콘!
+        SelectedCard = DentalCard1;
 
+        // 선택된 카드 x, y 값 포지션 값 변경
+        Vector3 position = SelectedCard.transform.localPosition;
+        position.x = 100;
+        position.y = 950;
+        SelectedCard.transform.localPosition = position;
+
+        //병원 아이콘 옆에 놓기
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+        SelectedCard.SetActive(true);
+
+    }
+    public void B2ToM4() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
+    {
+        //이야기 2에서 미션4로 넘어감
+        Book.SetActive(false);
+
+        Mission4.SetActive(true);
+        //////////////////////////////////////
+        SelectedCard = DentalCard2;
+
+        Vector3 position = SelectedCard.transform.localPosition;
+        position.x = 100;
+        position.y = 950;
+        SelectedCard.transform.localPosition = position;
+
+        //병원 아이콘 옆에 놓기
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+        SelectedCard.SetActive(true);
+    }
+    public void B3ToM7() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
+    {
+        //이야기 3에서 미션6로 넘어감
+        Book.SetActive(false);
+
+        Mission7.SetActive(true);
+        //////////////////////////////////////
+        SelectedCard = DentalCard3;
+
+        Vector3 position = SelectedCard.transform.localPosition;
+        position.x = 100;
+        position.y = 950;
+        SelectedCard.transform.localPosition = position;
+
+        //병원 아이콘 옆에 놓기
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+        SelectedCard.SetActive(true);
+    }
     //BookStart 함수(카드 선택 후 이야기 진행!)
     public void OnNextClick()
     {
         GameObject obj = EventSystem.current.currentSelectedGameObject;
        
         //index++;
-        if (obj.name == "BookNextBtn") //
+
+        // 이야기 1 next btn
+        if (obj.name == "BookNextBtn1") //
         {
             Debug.Log("클릭 작동");
             Debug.Log(index);
             
             BookStart[index].SetActive(false);
             index++;
-            if (index != 3)
+            if (index != 3) // 스토리 안 끝나면
             {
                 BookStart[index].SetActive(true);
             }
@@ -245,6 +305,42 @@ public class Dental : MonoBehaviour
                 index = 0;
             }
         }
-        
+
+
+        if (obj.name == "BookNextBtn2") //
+        {
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart[index].SetActive(false);
+            index++;
+            if (index != 3) // 스토리 안 끝나면
+            {
+                BookStart[index].SetActive(true);
+            }
+            if (index == 3) //스토리 끝나면 
+            {
+                Invoke("B2ToM4", 0.02f);
+                index = 0;
+            }
+        }
+
+        if (obj.name == "BookNextBtn3") //
+        {
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart[index].SetActive(false);
+            index++;
+            if (index != 3) // 스토리 안 끝나면
+            {
+                BookStart[index].SetActive(true);
+            }
+            if (index == 3) //스토리 끝나면 
+            {
+                Invoke("B3ToM7", 0.02f);
+                index = 0;
+            }
+        }
     }
 }

@@ -1,3 +1,4 @@
+// !!사용 안 함!!(북아이콘 용 스크립트)
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
