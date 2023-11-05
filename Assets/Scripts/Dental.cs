@@ -22,8 +22,6 @@ public class Dental : MonoBehaviour
 
     // Card -> Book
     public GameObject[] BookStart; // 
-    /* public GameObject[] BookStart2;
-     public GameObject[] BookStart3;*/
 
     public Text ChapterName;
     // Book -> Mission
