@@ -48,18 +48,6 @@ public class DentalMission : MonoBehaviour
         startingPos.y = transform.position.y;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void OnM1Click()
     {
 
@@ -159,17 +147,8 @@ public class DentalMission : MonoBehaviour
     {
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
-        if (clickObj == M3_DCard1)
+        if (clickObj == M3_DCard1)// -> 정답
         {
-
-            M3_XBtn1.SetActive(true); //X출력
-
-            GuardianPetText.text = "다시 한 번 생각해봐";
-        }
-
-        if (clickObj == M3_DCard2) // -> 정답
-        {
-
             M3_OBtn.SetActive(true); // O출력
 
             GuardianPetText.text = "";
@@ -177,7 +156,86 @@ public class DentalMission : MonoBehaviour
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
             Success1.SetActive(true); // -> 
+        }
 
+        if (clickObj == M3_DCard2) 
+        {
+
+            M3_XBtn1.SetActive(true);// X 출력
+
+            GuardianPetText.text = "다시 한 번 생각해봐";
+
+           
+
+        }
+
+        if (clickObj == M3_DCard3)
+        {
+
+            M3_XBtn2.SetActive(true); //X출력
+
+            GuardianPetText.text = "다시 한 번 생각해봐";
+        }
+    }
+
+
+    public void OnM6Click()
+    {
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        if (clickObj == M3_DCard2)// -> 정답
+        {
+            M3_OBtn.SetActive(true); // O출력
+
+            GuardianPetText.text = "";
+
+            // 다음으로 넘어감 (펫 획득 UI!)
+            M3.SetActive(false);
+            Success2.SetActive(true); // -> 
+        }
+
+        if (clickObj == M3_DCard1)
+        {
+
+            M3_XBtn1.SetActive(true);// X 출력
+
+            GuardianPetText.text = "다시 한 번 생각해봐";
+
+
+
+        }
+
+        if (clickObj == M3_DCard3)
+        {
+
+            M3_XBtn2.SetActive(true); //X출력
+
+            GuardianPetText.text = "다시 한 번 생각해봐";
+        }
+    }
+
+    //M9
+    public void OnM9Click()
+    {
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        if (clickObj == M3_DCard3)// -> 정답
+        {
+            M3_OBtn.SetActive(true); // O출력
+
+            GuardianPetText.text = "";
+
+            // 다음으로 넘어감 (펫 획득 UI!)
+            M3.SetActive(false);
+            Success3.SetActive(true); // -> 
+        }
+
+        if (clickObj == M3_DCard1)
+        {
+
+            M3_XBtn1.SetActive(true);// X 출력
+
+            GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObj == M3_DCard3)

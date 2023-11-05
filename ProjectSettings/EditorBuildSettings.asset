@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1_StartScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/2_Prologue.unity
+    guid: 98286b1c4d9fd014091c51e43c74084a
+  - enabled: 1
+    path: Assets/Scenes/3_Main.unity
+    guid: 5b24b19a7c231ac45b42035513214ac6
+  - enabled: 1
+    path: Assets/Scenes/Dental.unity
+    guid: c58c159b398d6224f9ee93d57d2d2373
+  - enabled: 1
+    path: Assets/Scenes/ENT.unity
+    guid: c3b87a40a8cd51744a9890e36ec5250f
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 64e4dfc26a2f0b24b9f4210cfdb52dbf, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: bb4267bb3edece34593db6f6e1e55be9, type: 2}

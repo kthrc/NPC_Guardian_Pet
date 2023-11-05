@@ -15,11 +15,17 @@ public class Dental : MonoBehaviour
     public GameObject SelectedCard;
     public GameObject Book;
 
+    public SpriteRenderer Renderer;
+    public Sprite Card1;
+    public Sprite Card2;
+    public Sprite Card3;
+
     // Card -> Book
     public GameObject[] BookStart; // 
-   /* public GameObject[] BookStart2;
-    public GameObject[] BookStart3;*/
+    /* public GameObject[] BookStart2;
+     public GameObject[] BookStart3;*/
 
+    public Text ChapterName;
     // Book -> Mission
     public GameObject Mission1;
     public GameObject Mission2;
@@ -44,18 +50,6 @@ public class Dental : MonoBehaviour
     public int cnt = 0;
     public static int index = 0;
 
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnClick()
     {
@@ -69,7 +63,8 @@ public class Dental : MonoBehaviour
             DentalCard3.SetActive(false);
 
             SelectedCard = DentalCard1;
-            
+            Renderer.sprite = Card1;
+
             //크기 및 위치
             Vector3 position = SelectedCard.transform.localPosition;
             position.x = 0;
@@ -158,6 +153,11 @@ public class Dental : MonoBehaviour
             //팝업 책 (회색 배경)
             SelectedCard.SetActive(false);
             Book.SetActive(true); // 스토리로 이동
+            
+            if(Book.activeSelf) // 챕터 이름(위에!) OK
+            {
+                ChapterName.text = "이가 썩었어요";
+            }
             /*BookStart[0].SetActive(true);
             SelectedCard.SetActive(false);*/
             //BookStart1.SetActive(true);
@@ -188,6 +188,11 @@ public class Dental : MonoBehaviour
 */
             SelectedCard.SetActive(false);
             Book.SetActive(true); // 스토리로 이동
+
+            if (Book.activeSelf) // 챕터 이름(위에!)
+            {
+                ChapterName.text = "이가 빠졌어요";
+            }
         }
         // Choice Card3 증상카드 3
         if (clickObj.name == "DentalCard3" && SelectedCard == DentalCard3 && cnt == 2) //
@@ -216,6 +221,11 @@ public class Dental : MonoBehaviour
 
             SelectedCard.SetActive(false);
             Book.SetActive(true); // 스토리로 이동
+
+            if (Book.activeSelf) // 챕터 이름(위에!)
+            {
+                ChapterName.text = "이가 부러졌어요";
+            }
         }
         cnt++;
     }
