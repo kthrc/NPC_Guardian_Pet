@@ -1,228 +1,228 @@
-{
+ï»¿{
   "dental3": [
     {
       "name": "narration",
       "scene": 1,
-      "comments": [
-        { "content": "¾ó¸¶ µÚ, ³ª´Â ¶Ç ´Ù½Ã °ø¿ø¿¡ ¹æ¹®Çß´Ù." },
-        { "content": "±×·±µ¥ °ø¿ø¿¡´Â Áö³­¹ø°ú ´Þ¸® ¾ÆÀÌµéÀÌ ¾ø¾ú´Ù." }
+      "scripts": [
+        { "content": "ì–¼ë§ˆ ë’¤, ë‚˜ëŠ” ë˜ ë‹¤ì‹œ ê³µì›ì— ë°©ë¬¸í–ˆë‹¤." },
+        { "content": "ê·¸ëŸ°ë° ê³µì›ì—ëŠ” ì§€ë‚œë²ˆê³¼ ë‹¬ë¦¬ ì•„ì´ë“¤ì´ ì—†ì—ˆë‹¤." }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 1,
-      "comments": [
-        { "content": "'¿À´ÃÀº ¾ÆÀÌµéÀÌ ¾ø³×. Á¶¿ëÇÏ´Ù.'" }
-      ]
-    },
-    {
-      "name": "narration",
-      "scene": 1,
-      "comments": [
-        { "content": "°ø¿øÀ» »êÃ¥ÇÏ´ø Áß ³ª´Â ½Ã²ô·¯¿î ¼Ò¸®°¡ ³ª´Â °÷À¸·Î ÇâÇß´Ù." },
-        { "content": "±×°÷¿¡´Â ¾ÆÀÌµéÀÌ ¹«¾ð°¡¸¦ µÑ·¯½Î°í ¸ð¿©ÀÖ¾ú´Ù." }
-      ]
-    },
-    {
-      "name": "³ª",
-      "scene": 1,
-      "comments": [
-        { "content": "´Ùµé ¿©±â ÀÖ¾ú±¸³ª. ¹¹ÇÏ°í ÀÖ¾ú¾î?" }
-      ]
-    },
-    {
-      "name": "¼­¾Æ",
-      "scene": 1,
-      "comments": [
-        { "content": "Àá±ñ, °¡±îÀÌ ¿ÀÁö¸¶!" }
-      ]
-    },
-    {
-      "name": "Àç¹Î",
-      "scene": 1,
-      "comments": [
-        { "content": "Àú¸®°¡! ¿©±â´Â ¿À¸é ¾È µÈ´Ü ¸»ÀÌ¾ß." }
+      "scripts": [
+        { "content": "'ì˜¤ëŠ˜ì€ ì•„ì´ë“¤ì´ ì—†ë„¤. ì¡°ìš©í•˜ë‹¤.'" }
       ]
     },
     {
       "name": "narration",
       "scene": 1,
-      "comments": [
-        { "content": "±×¶§ ³ª¸¦ °¡·Î¸·´Â ¼­¾Æ¿Í Àç¹ÎÀÌ µÚ¿¡¼­ ¸»¼Ò¸®°¡ µé·È´Ù." }
+      "scripts": [
+        { "content": "ê³µì›ì„ ì‚°ì±…í•˜ë˜ ì¤‘ ë‚˜ëŠ” ì‹œë„ëŸ¬ìš´ ì†Œë¦¬ê°€ ë‚˜ëŠ” ê³³ìœ¼ë¡œ í–¥í–ˆë‹¤." },
+        { "content": "ê·¸ê³³ì—ëŠ” ì•„ì´ë“¤ì´ ë¬´ì–¸ê°€ë¥¼ ë‘˜ëŸ¬ì‹¸ê³  ëª¨ì—¬ìžˆì—ˆë‹¤." }
+      ]
+    },
+    {
+      "name": "ë‚˜",
+      "scene": 1,
+      "scripts": [
+        { "content": "ë‹¤ë“¤ ì—¬ê¸° ìžˆì—ˆêµ¬ë‚˜. ë­í•˜ê³  ìžˆì—ˆì–´?" }
+      ]
+    },
+    {
+      "name": "ì„œì•„",
+      "scene": 1,
+      "scripts": [
+        { "content": "ìž ê¹, ê°€ê¹Œì´ ì˜¤ì§€ë§ˆ!" }
+      ]
+    },
+    {
+      "name": "ìž¬ë¯¼",
+      "scene": 1,
+      "scripts": [
+        { "content": "ì €ë¦¬ê°€! ì—¬ê¸°ëŠ” ì˜¤ë©´ ì•ˆ ëœë‹¨ ë§ì´ì•¼." }
+      ]
+    },
+    {
+      "name": "narration",
+      "scene": 1,
+      "scripts": [
+        { "content": "ê·¸ë•Œ ë‚˜ë¥¼ ê°€ë¡œë§‰ëŠ” ì„œì•„ì™€ ìž¬ë¯¼ì´ ë’¤ì—ì„œ ë§ì†Œë¦¬ê°€ ë“¤ë ¸ë‹¤." }
       ]
     },
     {
       "name": "yua",
       "scene": 1,
-      "comments": [
-        { "cotent": "Á¶±Ý¸¸ Âü¾ÆºÁ. ±Ý¹æ ºÙ¿©ÁÙ°Ô." }
+      "scripts": [
+        { "cotent": "ì¡°ê¸ˆë§Œ ì°¸ì•„ë´. ê¸ˆë°© ë¶™ì—¬ì¤„ê²Œ." }
       ]
     },
     {
-      "name": "Ã¶¹Î",
+      "name": "ì² ë¯¼",
       "scene": 1,
-      "comments": [
-        { "content": "À¸¾Æ¾Ó¡¦ ³Ê¹« ¾ÆÇÁ´Ü ¸»ÀÌ¾ß." }
+      "scripts": [
+        { "content": "ìœ¼ì•„ì•™â€¦ ë„ˆë¬´ ì•„í”„ë‹¨ ë§ì´ì•¼." }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 2,
-      "comments": [
-        { "content": "¹«½¼ ÀÏÀÎÁö ¸»ÇØÁÙ ¼ö ÀÖÀ»±î?" }
+      "scripts": [
+        { "content": "ë¬´ìŠ¨ ì¼ì¸ì§€ ë§í•´ì¤„ ìˆ˜ ìžˆì„ê¹Œ?" }
       ]
     },
     {
-      "name": "Àç¹Î",
+      "name": "ìž¬ë¯¼",
       "scene": 2,
-      "comments": [
-        { "content": "±×°Ô¡¦»ç½ÇÀº ¸»ÀÌ¾ß¡¦" }
+      "scripts": [
+        { "content": "ê·¸ê²Œâ€¦ì‚¬ì‹¤ì€ ë§ì´ì•¼â€¦" }
       ]
     },
     {
-      "name": "¼­¾Æ",
+      "name": "ì„œì•„",
       "scene": 2,
-      "comments": [
-        { "content": "¾ÈµÅ..! ºÐ¸í ¿ì¸®¸¦ È¥³¾°Å¾ß. ¸»ÇÏ¸é ¾ÈµÅ." }
+      "scripts": [
+        { "content": "ì•ˆë¼..! ë¶„ëª… ìš°ë¦¬ë¥¼ í˜¼ë‚¼ê±°ì•¼. ë§í•˜ë©´ ì•ˆë¼." }
       ]
     },
     {
       "name": "narration",
       "scene": 2,
-      "comments": [
-        { "content": "±×¶§ À¯¾Æ°¡ ³ª¼­¼­ ¹«¾ð°¡¸¦ ³ª¿¡°Ô º¸¿©ÁÖ¾ú´Ù." }
+      "scripts": [
+        { "content": "ê·¸ë•Œ ìœ ì•„ê°€ ë‚˜ì„œì„œ ë¬´ì–¸ê°€ë¥¼ ë‚˜ì—ê²Œ ë³´ì—¬ì£¼ì—ˆë‹¤." }
       ]
     },
     {
       "name": "yua",
       "scene": 2,
-      "comments": [
-        { "cotent": "¾Æ±î °ø³îÀÌ¸¦ ÇÏ´Ù°¡ Ã¶¹ÎÀÌ°¡ ¾ó±¼¿¡ °øÀ» ¸Â¾Ò¾î. ±×¸®°í °©ÀÚ±â ÀÌ·¸°Ô ÀÌ°¡ ºÎ·¯Á®¹ö·È¾î." }
+      "scripts": [
+        { "cotent": "ì•„ê¹Œ ê³µë†€ì´ë¥¼ í•˜ë‹¤ê°€ ì² ë¯¼ì´ê°€ ì–¼êµ´ì— ê³µì„ ë§žì•˜ì–´. ê·¸ë¦¬ê³  ê°‘ìžê¸° ì´ë ‡ê²Œ ì´ê°€ ë¶€ëŸ¬ì ¸ë²„ë ¸ì–´." }
       ]
     },
     {
-      "name": "Àç¹Î",
+      "name": "ìž¬ë¯¼",
       "scene": 2,
-      "comments": [
-        { "content": "ºÎ·¯Áø °Ç ´Ù½Ã ºÙÀÌ¸é µÅ..! ³ªÇÑÅ× Å×ÀÌÇÁ°¡ ÀÖ¾ú°Åµç!" }
+      "scripts": [
+        { "content": "ë¶€ëŸ¬ì§„ ê±´ ë‹¤ì‹œ ë¶™ì´ë©´ ë¼..! ë‚˜í•œí…Œ í…Œì´í”„ê°€ ìžˆì—ˆê±°ë“ !" }
       ]
     },
     {
-      "name": "¼­¾Æ",
+      "name": "ì„œì•„",
       "scene": 2,
-      "comments": [
-        { "content": "¾î¸¥µéÇÑÅ×´Â ºñ¹ÐÀÌ¾ß. ¹«¾ð°¡¸¦ ¶Ç ºÎ·¯Æ®¸®¸é ¾öÃ» È¥³¯°Å¶ó°í Çß°Åµç." }
+      "scripts": [
+        { "content": "ì–´ë¥¸ë“¤í•œí…ŒëŠ” ë¹„ë°€ì´ì•¼. ë¬´ì–¸ê°€ë¥¼ ë˜ ë¶€ëŸ¬íŠ¸ë¦¬ë©´ ì—„ì²­ í˜¼ë‚ ê±°ë¼ê³  í–ˆê±°ë“ ." }
       ]
     },
     {
       "name": "narration",
       "scene": 3,
-      "comments": [
-        { "content": "¾É¾Æ¼­ ÀÔÀ» ¹ú¸®°íÀÖ´Â Ã¶¹ÎÀÌ¸¦º¸´Ï ¾Õ´Ï°¡ ºÎ·¯ÁøÃ¤·Î ¼Õ¿¡ Å×ÀÌÇÁ¸¦ µé°í ÀÖ¾ú´Ù." }
+      "scripts": [
+        { "content": "ì•‰ì•„ì„œ ìž…ì„ ë²Œë¦¬ê³ ìžˆëŠ” ì² ë¯¼ì´ë¥¼ë³´ë‹ˆ ì•žë‹ˆê°€ ë¶€ëŸ¬ì§„ì±„ë¡œ ì†ì— í…Œì´í”„ë¥¼ ë“¤ê³  ìžˆì—ˆë‹¤." }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 3,
-      "comments": [
-        { "content": "¡®ºÎ·¯Áø ÀÌ¸¦ Å×ÀÌÇÁ·Î ºÙÀÏ ¼ö ÀÖÀ»±î?¡¯" }
+      "scripts": [
+        { "content": "â€˜ë¶€ëŸ¬ì§„ ì´ë¥¼ í…Œì´í”„ë¡œ ë¶™ì¼ ìˆ˜ ìžˆì„ê¹Œ?â€™" }
       ]
     },
     {
       "name": "narration",
       "scene": 3,
-      "comments": [
-        { "content": "¼ø°£, Ä«µå´õ¹Ì ¼Ó¿¡¼­ ¡®ÀÌ°¡ ºÎ·¯Á³¾î¿ä¡¯¡¯¶ó´Â Ä«µå°¡ ¹ÝÂ¦¿´´Ù." },
-        { "content": "±×¸®°í Ä«µå ¾Õ¸é¿¡´Â ÀÌ°¡ ºÎ·¯Áø Ã¶¹ÎÀÌÀÇ ¸ð½ÀÀÌ ÀÖ¾ú°í, Ä«µå µÞ¸éÀ» º¸´Ï ¼öÈ£ÆêÀÌ ³ªÅ¸³µ´Ù." }
+      "scripts": [
+        { "content": "ìˆœê°„, ì¹´ë“œë”ë¯¸ ì†ì—ì„œ â€˜ì´ê°€ ë¶€ëŸ¬ì¡Œì–´ìš”â€™â€™ë¼ëŠ” ì¹´ë“œê°€ ë°˜ì§ì˜€ë‹¤." },
+        { "content": "ê·¸ë¦¬ê³  ì¹´ë“œ ì•žë©´ì—ëŠ” ì´ê°€ ë¶€ëŸ¬ì§„ ì² ë¯¼ì´ì˜ ëª¨ìŠµì´ ìžˆì—ˆê³ , ì¹´ë“œ ë’·ë©´ì„ ë³´ë‹ˆ ìˆ˜í˜¸íŽ«ì´ ë‚˜íƒ€ë‚¬ë‹¤." }
       ]
     },
     {
       "name": "narration",
       "scene": 4,
-      "comments": [
-        { "content": "Ä«µå µÞ¸é¿¡ ÀÖ´ø ¼öÈ£ÆêÀÌ Ä«µå¿¡¼­ Åå Æ¢¾î³ª¿Í ³» ´«¾Õ¿¡ ¼¹´Ù." },
-        { "content": "¼­¾Æ¿Í Àç¹ÎÀÌ, À¯¾Æ¿Í Ã¶¹ÎÀÌ´Â ¼öÈ£ÆêÀ» º¸Áö ¸øÇß´ÂÁö °è¼Ó Å×ÀÌÇÁ¿Í ºÎ·¯Áø ÀÌ¸¦ ¸¸Áö°í ÀÖ¾ú´Ù." }
+      "scripts": [
+        { "content": "ì¹´ë“œ ë’·ë©´ì— ìžˆë˜ ìˆ˜í˜¸íŽ«ì´ ì¹´ë“œì—ì„œ í†¡ íŠ€ì–´ë‚˜ì™€ ë‚´ ëˆˆì•žì— ì„°ë‹¤." },
+        { "content": "ì„œì•„ì™€ ìž¬ë¯¼ì´, ìœ ì•„ì™€ ì² ë¯¼ì´ëŠ” ìˆ˜í˜¸íŽ«ì„ ë³´ì§€ ëª»í–ˆëŠ”ì§€ ê³„ì† í…Œì´í”„ì™€ ë¶€ëŸ¬ì§„ ì´ë¥¼ ë§Œì§€ê³  ìžˆì—ˆë‹¤." }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 4,
-      "comments": [
-        { "content": "¾È³ç, ¼öÈ£Æê. ³Ê´Â ÀÌ¸§ÀÌ ¹¹¾ß?" }
+      "scripts": [
+        { "content": "ì•ˆë…•, ìˆ˜í˜¸íŽ«. ë„ˆëŠ” ì´ë¦„ì´ ë­ì•¼?" }
       ]
     },
     {
-      "name": "»Ñ±â",
+      "name": "ë¿Œê¸°",
       "scene": 4,
-      "comments": [
-        { "content": "³» ÀÌ¸§Àº »Ñ±â¾ß." },
-        { "content": "±×°Íº¸´Ù, Áö±Ý ¹«Ã´ ±ÞÇÑ »óÈ²ÀÌ¾ß. ´çÀå Àú ¾ÆÀÌµéÀ» ¸ØÃçÁà!" }
+      "scripts": [
+        { "content": "ë‚´ ì´ë¦„ì€ ë¿Œê¸°ì•¼." },
+        { "content": "ê·¸ê²ƒë³´ë‹¤, ì§€ê¸ˆ ë¬´ì²™ ê¸‰í•œ ìƒí™©ì´ì•¼. ë‹¹ìž¥ ì € ì•„ì´ë“¤ì„ ë©ˆì¶°ì¤˜!" }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 4,
-      "comments": [
-        { "content": "¾ÆÀÌµéÀ» ¸ØÃç´Þ¶ó´Ï, ¹«½¼ ¼Ò¸®¾ß?" }
+      "scripts": [
+        { "content": "ì•„ì´ë“¤ì„ ë©ˆì¶°ë‹¬ë¼ë‹ˆ, ë¬´ìŠ¨ ì†Œë¦¬ì•¼?" }
       ]
     },
     {
-      "name": "»Ñ±â",
+      "name": "ë¿Œê¸°",
       "scene": 4,
-      "comments": [
-        { "content": "ºÎ·¯Áø ÀÌ´Â Å×ÀÌÇÁ·Î ºÙÀÏ ¼ö ¾ø¾î. °è¼Ó Àú·¸°Ô ÇÏ´Ù°¡´Â Ã¶¹ÎÀÌ°¡ ´õ ¾ÆÆÄÁö±â¸¸ ÇÒ°Å¾ß." },
-        { "content": "ÇÏÁö¸¸ ¾ÆÀÌµé ´«¿¡´Â ³»°¡ º¸ÀÌÁö ¾Ê¾Æ. ³Ê°¡ ´ë½Å ¸ØÃçÁà!" }
+      "scripts": [
+        { "content": "ë¶€ëŸ¬ì§„ ì´ëŠ” í…Œì´í”„ë¡œ ë¶™ì¼ ìˆ˜ ì—†ì–´. ê³„ì† ì €ë ‡ê²Œ í•˜ë‹¤ê°€ëŠ” ì² ë¯¼ì´ê°€ ë” ì•„íŒŒì§€ê¸°ë§Œ í• ê±°ì•¼." },
+        { "content": "í•˜ì§€ë§Œ ì•„ì´ë“¤ ëˆˆì—ëŠ” ë‚´ê°€ ë³´ì´ì§€ ì•Šì•„. ë„ˆê°€ ëŒ€ì‹  ë©ˆì¶°ì¤˜!" }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 4,
-      "comments": [
-        { "content": "±×·³ Ã¶¹ÎÀÌ´Â ¾î¶»°Ô ÇØ¾ßÇØ? º´¿ø¿¡ °¡¸é µÇ´Â°Ç°¡?" }
+      "scripts": [
+        { "content": "ê·¸ëŸ¼ ì² ë¯¼ì´ëŠ” ì–´ë–»ê²Œ í•´ì•¼í•´? ë³‘ì›ì— ê°€ë©´ ë˜ëŠ”ê±´ê°€?" }
       ]
     },
     {
-      "name": "»Ñ±â",
+      "name": "ë¿Œê¸°",
       "scene": 4,
-      "comments": [
-        { "content": "Æ¯È÷ ÀÌ°¡ ºÎ·¯Á³À»¶§´Â Ä¡°ú¿¡ °¡¸é µÅ." },
-        { "content": "¾ÆÀÌµé¿¡°Ô ÀÌ »ç½ÇÀ» ÀüÇØÁÙ ¼ö ÀÖÀ»±î?" }
+      "scripts": [
+        { "content": "íŠ¹ížˆ ì´ê°€ ë¶€ëŸ¬ì¡Œì„ë•ŒëŠ” ì¹˜ê³¼ì— ê°€ë©´ ë¼." },
+        { "content": "ì•„ì´ë“¤ì—ê²Œ ì´ ì‚¬ì‹¤ì„ ì „í•´ì¤„ ìˆ˜ ìžˆì„ê¹Œ?" }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 4,
-      "comments": [
-        { "content": "¾Ë·ÁÁà¼­ °í¸¶¿ö. ´çÀå Ä¡°ú¿¡ °¡¶ó°í ÀüÇÒ°Ô." }
+      "scripts": [
+        { "content": "ì•Œë ¤ì¤˜ì„œ ê³ ë§ˆì›Œ. ë‹¹ìž¥ ì¹˜ê³¼ì— ê°€ë¼ê³  ì „í• ê²Œ." }
       ]
     },
     {
-      "name": "³ª",
+      "name": "ë‚˜",
       "scene": 4,
-      "comments": [
-        { "content": "¾êµé¾Æ, ºÎ·¯Áø ÀÌ´Â Å×ÀÌÇÁ·Î ºÙÀÏ ¼ö ¾ø¾î. ÀÌ·²¶§´Â Ä¡°ú¿¡ °¡¾ßÇØ." }
+      "scripts": [
+        { "content": "ì–˜ë“¤ì•„, ë¶€ëŸ¬ì§„ ì´ëŠ” í…Œì´í”„ë¡œ ë¶™ì¼ ìˆ˜ ì—†ì–´. ì´ëŸ´ë•ŒëŠ” ì¹˜ê³¼ì— ê°€ì•¼í•´." }
       ]
     },
     {
-      "name": "Ã¶¹Î",
+      "name": "ì² ë¯¼",
       "scene": 4,
-      "comments": [
-        { "content": "Á¤¸»? ±×·¯¸é ³ª´Â ´õÀÌ»ó ¾ÆÇÁÁö ¾ÊÀ» ¼ö ÀÖ´Â°ÅÁö?" }
+      "scripts": [
+        { "content": "ì •ë§? ê·¸ëŸ¬ë©´ ë‚˜ëŠ” ë”ì´ìƒ ì•„í”„ì§€ ì•Šì„ ìˆ˜ ìžˆëŠ”ê±°ì§€?" }
       ]
     },
     {
-      "name": "¼­¾Æ",
+      "name": "ì„œì•„",
       "scene": 4,
-      "comments": [
-        { "content": "»¡¸® Ä¡°ú¿¡ °¡º¸ÀÚ!" }
+      "scripts": [
+        { "content": "ë¹¨ë¦¬ ì¹˜ê³¼ì— ê°€ë³´ìž!" }
       ]
     },
     {
       "name": "narration",
       "scene": 4,
-      "comments": [
-        { "content": "¾ÆÀÌµéÀÌ Ä¡°ú·Î ÇâÇÏ´Â°É º» ¼öÈ£ÆêÀº ´Ù½Ã Ä«µå ¾ÈÀ¸·Î µé¾î°¬´Ù." },
-        { "content": "±×¸®°í ´ÙÀ½³¯ Ã¶¹ÎÀÌ¿Í ¼­¾Æ, À¯¾Æ, Àç¹ÎÀÌ´Â È¯ÇÏ°Ô ¿ôÀ¸¸ç °øÅÍ·Î µ¹¾Æ¿Í ³î¾Ò´Ù." }
+      "scripts": [
+        { "content": "ì•„ì´ë“¤ì´ ì¹˜ê³¼ë¡œ í–¥í•˜ëŠ”ê±¸ ë³¸ ìˆ˜í˜¸íŽ«ì€ ë‹¤ì‹œ ì¹´ë“œ ì•ˆìœ¼ë¡œ ë“¤ì–´ê°”ë‹¤." },
+        { "content": "ê·¸ë¦¬ê³  ë‹¤ìŒë‚  ì² ë¯¼ì´ì™€ ì„œì•„, ìœ ì•„, ìž¬ë¯¼ì´ëŠ” í™˜í•˜ê²Œ ì›ƒìœ¼ë©° ê³µí„°ë¡œ ëŒì•„ì™€ ë†€ì•˜ë‹¤." }
       ]
     }
   ]
