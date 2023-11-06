@@ -42,6 +42,7 @@ public class DentalMission : MonoBehaviour
 
     Vector2 startingPos; // 진동 효과 위해서 넣어놓음222 (구현 안 됨 ㅠ)
 
+    
     void Awake()
     {
         startingPos.x = transform.position.x;
@@ -156,6 +157,8 @@ public class DentalMission : MonoBehaviour
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
             Success1.SetActive(true); // -> 
+
+            OnClickToAnother();
         }
 
         if (clickObj == M3_DCard2) 
@@ -238,12 +241,24 @@ public class DentalMission : MonoBehaviour
             GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
-        if (clickObj == M3_DCard3)
+        if (clickObj == M3_DCard2)
         {
 
             M3_XBtn2.SetActive(true); //X출력
 
             GuardianPetText.text = "다시 한 번 생각해봐";
+        }
+    }
+
+    public void OnClickToAnother()
+    {
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        if (clickObj == Success1)
+        {
+            Debug.Log("Success 눌리긴함");
+            Success1.SetActive(false);
+
         }
     }
 }

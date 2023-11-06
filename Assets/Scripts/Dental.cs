@@ -351,4 +351,15 @@ public class Dental : MonoBehaviour
             }
         }
     }
+
+    public void OnClickToAnother()
+    {
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        if (clickObj == Success1)
+        {
+            Success1.SetActive(false);
+            DentalCard1.SetActive(true);
+        }
+    }
 }
