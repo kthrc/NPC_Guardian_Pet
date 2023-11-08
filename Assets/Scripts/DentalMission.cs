@@ -54,11 +54,7 @@ public class DentalMission : MonoBehaviour
 
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
-        /*if(M1_end == 1) // flag end 값 1이면 종료
-        {
-            M1.SetActive(false);
-
-        }*/
+        
         if (clickObject == M1_Eye) // X 출력하고 펫이 설명해줘야됨
         {
             M1_XBtn1.SetActive(true); //X출력
@@ -104,15 +100,15 @@ public class DentalMission : MonoBehaviour
         // O 버튼 선택 시 ->  정답
         if (clickObj == M2_O)
         {
-            M2_X.SetActive(false);
+            //M2_X.SetActive(false);
 
             GuardianPetText.text = "";
 
-            Vector3 position = M2_O.transform.localPosition;
+            /*Vector3 position = M2_O.transform.localPosition;
             position.x = 1780;
             position.y = 1870;
             M2_O.transform.localPosition = position;
-
+*/
 
             Invoke("M2ToM3", 0.2f); // 시간 차를 주고 NextMission 으로 넘김
             // 삽입된 미션 -> 다시 책으로 돌아감
@@ -134,12 +130,12 @@ public class DentalMission : MonoBehaviour
             */
 
 
-            Vector3 position = M2_X.transform.localPosition;
+           /* Vector3 position = M2_X.transform.localPosition;
             position.x = 2500;
             position.y = 1870;
             M2_X.transform.localPosition = position;
             transform.localScale = new Vector3(3f, 3f, 3f);
-
+*/
         }
     }
 
@@ -156,9 +152,9 @@ public class DentalMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            Success1.SetActive(true); // -> 
+            Success1.SetActive(true); // 해결
 
-            OnClickToAnother();
+            //OnClickToAnother();
         }
 
         if (clickObj == M3_DCard2) 
@@ -250,15 +246,18 @@ public class DentalMission : MonoBehaviour
         }
     }
 
-    public void OnClickToAnother()
+    public void ContinueGame()
     {
+        //Success1.SetActive(false);
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
-        if (clickObj == Success1)
+        clickObj.GetComponent<Dental>().OnClickContinue();
+        /*if (clickObj.name == "Success1")
         {
-            Debug.Log("Success 눌리긴함");
             Success1.SetActive(false);
 
-        }
+            clickObj.GetComponent<Dental>().OnClickContinue();
+            
+        }*/
     }
 }

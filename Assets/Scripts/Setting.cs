@@ -36,7 +36,10 @@ public class Setting : MonoBehaviour
         {
             SettingPop.SetActive(false);
         }
-
+        if (clickObject.name == "CardXBtn") //
+        {
+            CardPop.SetActive(false);
+        }
         if (clickObject.name == "SoundBtn") //
         {
             SettingPop.SetActive(false);
