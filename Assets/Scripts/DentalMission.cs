@@ -42,14 +42,16 @@ public class DentalMission : MonoBehaviour
 
     Vector2 startingPos; // 진동 효과 위해서 넣어놓음222 (구현 안 됨 ㅠ)
 
-    public static int[] DenState = new int[9];
+    public static int[] DenState = new int[3];
     /*public static int[] ENTState;
     public static int[] EyeState;*/
 
-    void Awake()
+    void Update()
     {
         startingPos.x = transform.position.x;
         startingPos.y = transform.position.y;
+
+        //Success1.GetComponent<Dental>().OnClickContinue3();
     }
 
     public void OnM1Click()
@@ -60,7 +62,7 @@ public class DentalMission : MonoBehaviour
         
         if (clickObject == M1_Eye) // X 출력하고 펫이 설명해줘야됨
         {
-            M1_XBtn1.SetActive(true); //X출력
+            M1_OBtn.SetActive(true); //X출력
             GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
@@ -72,7 +74,7 @@ public class DentalMission : MonoBehaviour
 
         if (clickObject == M1_Dental) // O 출력
         {
-            M1_OBtn.SetActive(true); //
+            M1_XBtn1.SetActive(true); //
 
             /*M1_end = 1; // flag 값
             M1.SetActive(false);
@@ -258,10 +260,10 @@ public class DentalMission : MonoBehaviour
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
          Vector3 p = Success1.transform.localPosition;
-         p.x = 0;
+         p.x = -100;
          p.y = 0;
          Success1.transform.localPosition = p;
-         transform.localScale = new Vector3(1, 1f, 1f);
+         transform.localScale = new Vector3(3, 3f, 3f);
 
 
         Success1.SetActive(true);
@@ -299,5 +301,13 @@ public class DentalMission : MonoBehaviour
         Success3.SetActive(true);
         clickObj.GetComponent<Dental>().OnClickContinue3();
 
+    }
+    public void GoToMain()
+    {
+        if (DenState[0] == 1 &&
+            DenState[1] == 1 &&
+            DenState[2] == 1) {
+            SceneManager.LoadScene("3_Main");
+                }
     }
 }

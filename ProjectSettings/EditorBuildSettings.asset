@@ -22,7 +22,13 @@ EditorBuildSettings:
     guid: c58c159b398d6224f9ee93d57d2d2373
   - enabled: 1
     path: Assets/Scenes/ENT.unity
-    guid: c3b87a40a8cd51744a9890e36ec5250f
+    guid: 0a1e520a3c6440f48b7b66dc7b63f9af
+  - enabled: 1
+    path: Assets/Scenes/Eye.unity
+    guid: bd48406224420654fa3fcb60c9599882
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 64e4dfc26a2f0b24b9f4210cfdb52dbf, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: bb4267bb3edece34593db6f6e1e55be9, type: 2}

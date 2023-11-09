@@ -54,9 +54,14 @@ public class Dental : MonoBehaviour
     public int cnt = 0;
     public static int index = 0;
     
-    void Start()
+    public void Awake()
     {
-        
+        if (DentalCard1.activeSelf == true) // 카드 켜져있으면 성공카드 끄기
+            Success1.SetActive(false);
+        if (DentalCard2.activeSelf == true) // 카드 켜져있으면 성공카드 끄기
+            Success2.SetActive(false);
+        if (DentalCard3.activeSelf == true) // 카드 켜져있으면 성공카드 끄기
+            Success3.SetActive(false);
         //mainBg.SetActive(false);
         //clickObj.GetComponent<Dental>().OnClickContinue();
     }
@@ -366,22 +371,77 @@ public class Dental : MonoBehaviour
     public void OnClickContinue1()
     {
         //2 3
-        DentalCard2.SetActive(true);
-        DentalCard3.SetActive(true);
+        Success1.SetActive(false);
+
+        if (DentalMission.DenState[1] == 1)
+        {
+            DentalCard2.SetActive(true);
+
+        }
+        else
+        {
+            DentalCard2.SetActive(false);
+        }
+
+
+        if (DentalMission.DenState[2] == 1)
+        {
+            DentalCard3.SetActive(true);
+        }
+        else
+        {
+            DentalCard3.SetActive(false);
+        }
+        //DentalCard3.SetActive(true);
 
     }
     public void OnClickContinue2()
     {
         // 1 3
-        DentalCard1.SetActive(true);
-        DentalCard3.SetActive(true);
+        
+        Success2.SetActive(false);
 
+        if (DentalMission.DenState[0] == 1)
+        {
+            DentalCard1.SetActive(true);
+        }
+        else
+        {
+            DentalCard1.SetActive(false);
+        }
+
+        if (DentalMission.DenState[2] == 1)
+        {
+            DentalCard3.SetActive(true);
+        }
+        else
+        {
+            DentalCard3.SetActive(false);
+        }
     }
     public void OnClickContinue3()
     {
         //1 2
-        DentalCard1.SetActive(true);
-        DentalCard2.SetActive(true);
+
+        Success3.SetActive(false);
+
+        if (DentalMission.DenState[0] == 1)
+        {
+            DentalCard1.SetActive(true);
+        }
+        else
+        {
+            DentalCard1.SetActive(false);
+        }
+
+        if (DentalMission.DenState[1] == 1)
+        {
+            DentalCard2.SetActive(true);
+        }
+        else
+        {
+            DentalCard2.SetActive(false);
+        }
 
     }
 }
