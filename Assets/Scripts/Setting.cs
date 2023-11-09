@@ -14,6 +14,7 @@ public class Setting : MonoBehaviour
     public GameObject SelectedCard; // 선택된 카드(for 팝업!)
     public GameObject SwitchBtn; // 선택된 카드 옆에 생기는 전환 버튼 오브젝트
 
+    public GameObject[] BackgroundEle;  // 뒷배경요소 제거
     public static int idx = 0;
     public int tmp = 0;
     public GameObject[] ENTCard;
@@ -30,11 +31,21 @@ public class Setting : MonoBehaviour
         {
           
             SettingPop.SetActive(true);
+
+            /*int currentOrder = SettingPop.transform.GetSiblingIndex();
+            SettingPop.transform.SetAsFirstSibling(); //
+            currentOrder = SettingPop.transform.GetSiblingIndex();
+            Debug.Log(currentOrder);*/
+
+            /*BackgroundEle[0].SetActive(false);
+            BackgroundEle[1].SetActive(false);*/
         }
 
         if (clickObject.name == "XBtn") //
         {
             SettingPop.SetActive(false);
+           /* BackgroundEle[0].SetActive(true);
+            BackgroundEle[1].SetActive(true);*/
         }
         if (clickObject.name == "CardXBtn") //
         {
@@ -49,6 +60,7 @@ public class Setting : MonoBehaviour
         if (clickObject.name == "SoundXBtn") //
         {
             SoundPop.SetActive(false);
+            
         }
         if (clickObject.name == "NotiBtn") //
         {

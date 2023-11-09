@@ -42,7 +42,10 @@ public class DentalMission : MonoBehaviour
 
     Vector2 startingPos; // 진동 효과 위해서 넣어놓음222 (구현 안 됨 ㅠ)
 
-    
+    public static int[] DenState = new int[9];
+    /*public static int[] ENTState;
+    public static int[] EyeState;*/
+
     void Awake()
     {
         startingPos.x = transform.position.x;
@@ -152,6 +155,7 @@ public class DentalMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
+            DenState[1] = 1;
             Success1.SetActive(true); // 해결
 
             //OnClickToAnother();
@@ -190,6 +194,7 @@ public class DentalMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
+            DenState[2] = 1;
             Success2.SetActive(true); // -> 
         }
 
@@ -226,6 +231,7 @@ public class DentalMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
+            DenState[2] = 1;
             Success3.SetActive(true); // -> 
         }
 
@@ -246,18 +252,52 @@ public class DentalMission : MonoBehaviour
         }
     }
 
-    public void ContinueGame()
+    public void ContinueGame1()
     {
         //Success1.SetActive(false);
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
-        clickObj.GetComponent<Dental>().OnClickContinue();
-        /*if (clickObj.name == "Success1")
-        {
-            Success1.SetActive(false);
+         Vector3 p = Success1.transform.localPosition;
+         p.x = 0;
+         p.y = 0;
+         Success1.transform.localPosition = p;
+         transform.localScale = new Vector3(1, 1f, 1f);
 
-            clickObj.GetComponent<Dental>().OnClickContinue();
-            
-        }*/
+
+        Success1.SetActive(true);
+        clickObj.GetComponent<Dental>().OnClickContinue1();
+        
+    }
+    public void ContinueGame2()
+    {
+        //Success1.SetActive(false);
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        Vector3 p = Success2.transform.localPosition;
+        p.x = 0;
+        p.y = 0;
+        Success2.transform.localPosition = p;
+        transform.localScale = new Vector3(1, 1f, 1f);
+
+
+        Success2.SetActive(true);
+        clickObj.GetComponent<Dental>().OnClickContinue2();
+
+    }
+    public void ContinueGame3()
+    {
+        //Success1.SetActive(false);
+        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
+
+        Vector3 p = Success3.transform.localPosition;
+        p.x = 0;
+        p.y = 0;
+        Success1.transform.localPosition = p;
+        transform.localScale = new Vector3(1, 1f, 1f);
+
+
+        Success3.SetActive(true);
+        clickObj.GetComponent<Dental>().OnClickContinue3();
+
     }
 }

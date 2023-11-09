@@ -204,6 +204,215 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52713102}
   m_CullTransparentMesh: 1
+--- !u!1 &76701734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76701735}
+  - component: {fileID: 76701740}
+  - component: {fileID: 76701739}
+  - component: {fileID: 76701738}
+  - component: {fileID: 76701737}
+  - component: {fileID: 76701736}
+  m_Layer: 0
+  m_Name: ContinueGameBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &76701735
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76701734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1677868902}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 326, y: 194.99997}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &76701736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76701734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7477d088cd19fc2439c89a396117a969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  M1: {fileID: 0}
+  M2: {fileID: 0}
+  M3: {fileID: 0}
+  M1_Eye: {fileID: 0}
+  M1_ENT: {fileID: 0}
+  M1_Dental: {fileID: 0}
+  M1_OBtn: {fileID: 0}
+  M1_XBtn1: {fileID: 0}
+  M1_XBtn2: {fileID: 0}
+  GuardianPetText: {fileID: 0}
+  M2_O: {fileID: 0}
+  M2_X: {fileID: 0}
+  M3_DCard1: {fileID: 0}
+  M3_DCard2: {fileID: 0}
+  M3_DCard3: {fileID: 0}
+  M3_OBtn: {fileID: 0}
+  M3_XBtn1: {fileID: 0}
+  M3_XBtn2: {fileID: 0}
+  Success1: {fileID: 1376193702}
+  Success2: {fileID: 1677868901}
+  Success3: {fileID: 1622999057}
+--- !u!114 &76701737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76701734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5692414267a2941be9c6339efb5549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DentalCard1: {fileID: 1697541521}
+  DentalCard2: {fileID: 1598952127}
+  DentalCard3: {fileID: 1217910261}
+  SelectedCard1: {fileID: 1722793899}
+  SelectedCard2: {fileID: 0}
+  SelectedCard3: {fileID: 0}
+  Book: {fileID: 0}
+  Renderer: {fileID: 0}
+  Card1: {fileID: 0}
+  Card2: {fileID: 0}
+  Card3: {fileID: 0}
+  BookStart: []
+  ChapterName: {fileID: 0}
+  Mission1: {fileID: 0}
+  Mission2: {fileID: 0}
+  Mission3: {fileID: 0}
+  Mission4: {fileID: 0}
+  Mission5: {fileID: 0}
+  Mission6: {fileID: 0}
+  Mission7: {fileID: 0}
+  Mission8: {fileID: 0}
+  Mission9: {fileID: 0}
+  BookEnding1: {fileID: 0}
+  BookEnding2: {fileID: 0}
+  BookEnding3: {fileID: 0}
+  Success1: {fileID: 1376193702}
+  Success2: {fileID: 1677868901}
+  Success3: {fileID: 1622999057}
+  cnt: 0
+--- !u!114 &76701738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76701734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 76701739}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 76701736}
+        m_TargetAssemblyTypeName: DentalMission, Assembly-CSharp
+        m_MethodName: ContinueGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &76701739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76701734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d006a621f0f9f47499bbb450cc3c162d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &76701740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76701734}
+  m_CullTransparentMesh: 1
 --- !u!1 &83044507
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &115257107
 Transform:
   m_ObjectHideFlags: 0
@@ -1775,6 +1984,7 @@ MonoBehaviour:
   CardPopEle: []
   SelectedCard: {fileID: 0}
   SwitchBtn: {fileID: 0}
+  BackgroundEle: []
   tmp: 0
   ENTCard: []
   DentalCard: []
@@ -2294,6 +2504,7 @@ MonoBehaviour:
   CardPopEle: []
   SelectedCard: {fileID: 0}
   SwitchBtn: {fileID: 0}
+  BackgroundEle: []
   tmp: 0
   ENTCard: []
   DentalCard: []
@@ -2618,6 +2829,7 @@ MonoBehaviour:
   CardPopEle: []
   SelectedCard: {fileID: 0}
   SwitchBtn: {fileID: 0}
+  BackgroundEle: []
   tmp: 0
   ENTCard: []
   DentalCard: []
@@ -2930,10 +3142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3360f1f966556d345bcac6816caac7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_clips:
-  - {fileID: 8300000, guid: e34a48d35df2cf84d8dea3ba5bfbb924, type: 3}
-  - {fileID: 8300000, guid: 9cb0c89c14b8f72458d90d7b0e05175e, type: 3}
-  sfx_slider: {fileID: 896620906}
+  bgm: {fileID: 0}
+  eff: {fileID: 0}
 --- !u!1 &284057476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,10 +3425,9 @@ RectTransform:
   m_GameObject: {fileID: 287229354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 518956013}
+  m_Children: []
   m_Father: {fileID: 1376193703}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3377,8 +3586,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d006a621f0f9f47499bbb450cc3c162d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3467,7 +3676,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f12f59e9e61e42943a0733f44f2dc0a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4991,86 +5200,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485789260}
   m_CullTransparentMesh: 1
---- !u!1 &518956012
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 518956013}
-  - component: {fileID: 518956015}
-  - component: {fileID: 518956014}
-  m_Layer: 0
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &518956013
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518956012}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 287229355}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &518956014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518956012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Button
---- !u!222 &518956015
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518956012}
-  m_CullTransparentMesh: 1
 --- !u!1 &519984676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,6 +5343,7 @@ MonoBehaviour:
   CardPopEle: []
   SelectedCard: {fileID: 0}
   SwitchBtn: {fileID: 0}
+  BackgroundEle: []
   tmp: 0
   ENTCard: []
   DentalCard: []
@@ -5577,6 +5707,215 @@ RectTransform:
   m_AnchoredPosition: {x: 1775, y: 2500}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &573675466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573675467}
+  - component: {fileID: 573675472}
+  - component: {fileID: 573675471}
+  - component: {fileID: 573675470}
+  - component: {fileID: 573675469}
+  - component: {fileID: 573675468}
+  m_Layer: 0
+  m_Name: ContinueGameBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &573675467
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573675466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1622999058}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 326, y: 194.99997}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &573675468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573675466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7477d088cd19fc2439c89a396117a969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  M1: {fileID: 0}
+  M2: {fileID: 0}
+  M3: {fileID: 0}
+  M1_Eye: {fileID: 0}
+  M1_ENT: {fileID: 0}
+  M1_Dental: {fileID: 0}
+  M1_OBtn: {fileID: 0}
+  M1_XBtn1: {fileID: 0}
+  M1_XBtn2: {fileID: 0}
+  GuardianPetText: {fileID: 0}
+  M2_O: {fileID: 0}
+  M2_X: {fileID: 0}
+  M3_DCard1: {fileID: 0}
+  M3_DCard2: {fileID: 0}
+  M3_DCard3: {fileID: 0}
+  M3_OBtn: {fileID: 0}
+  M3_XBtn1: {fileID: 0}
+  M3_XBtn2: {fileID: 0}
+  Success1: {fileID: 1376193702}
+  Success2: {fileID: 1677868901}
+  Success3: {fileID: 1622999057}
+--- !u!114 &573675469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573675466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5692414267a2941be9c6339efb5549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DentalCard1: {fileID: 1697541521}
+  DentalCard2: {fileID: 1598952127}
+  DentalCard3: {fileID: 1217910261}
+  SelectedCard1: {fileID: 1722793899}
+  SelectedCard2: {fileID: 0}
+  SelectedCard3: {fileID: 0}
+  Book: {fileID: 0}
+  Renderer: {fileID: 0}
+  Card1: {fileID: 0}
+  Card2: {fileID: 0}
+  Card3: {fileID: 0}
+  BookStart: []
+  ChapterName: {fileID: 0}
+  Mission1: {fileID: 0}
+  Mission2: {fileID: 0}
+  Mission3: {fileID: 0}
+  Mission4: {fileID: 0}
+  Mission5: {fileID: 0}
+  Mission6: {fileID: 0}
+  Mission7: {fileID: 0}
+  Mission8: {fileID: 0}
+  Mission9: {fileID: 0}
+  BookEnding1: {fileID: 0}
+  BookEnding2: {fileID: 0}
+  BookEnding3: {fileID: 0}
+  Success1: {fileID: 1376193702}
+  Success2: {fileID: 1677868901}
+  Success3: {fileID: 1622999057}
+  cnt: 0
+--- !u!114 &573675470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573675466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 573675471}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 573675468}
+        m_TargetAssemblyTypeName: DentalMission, Assembly-CSharp
+        m_MethodName: ContinueGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &573675471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573675466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d006a621f0f9f47499bbb450cc3c162d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &573675472
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573675466}
+  m_CullTransparentMesh: 1
 --- !u!1 &577509926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7106,6 +7445,7 @@ MonoBehaviour:
   CardPopEle: []
   SelectedCard: {fileID: 0}
   SwitchBtn: {fileID: 0}
+  BackgroundEle: []
   tmp: 0
   ENTCard: []
   DentalCard: []
@@ -11251,7 +11591,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: a5f19ac4427499e4580caeddf6f347c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13810,7 +14150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: a5f19ac4427499e4580caeddf6f347c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14074,7 +14414,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 57a66515a2ba93b4fb97458c287b62f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16484,6 +16824,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1373056994}
+  - {fileID: 573675467}
   m_Father: {fileID: 662531501}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16700,7 +17041,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: ad32dd2e96be3e04bb4fc443d49b4a30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17663,6 +18004,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1215148630}
+  - {fileID: 76701735}
   m_Father: {fileID: 662531501}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17879,7 +18221,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 596d5eb0dea49804fa6f7474f545e346, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18097,8 +18439,8 @@ MonoBehaviour:
   Book: {fileID: 326304127}
   Renderer: {fileID: 1722793900}
   Card1: {fileID: 21300000, guid: 57a66515a2ba93b4fb97458c287b62f5, type: 3}
-  Card2: {fileID: 0}
-  Card3: {fileID: 0}
+  Card2: {fileID: 21300000, guid: 596d5eb0dea49804fa6f7474f545e346, type: 3}
+  Card3: {fileID: 21300000, guid: ad32dd2e96be3e04bb4fc443d49b4a30, type: 3}
   BookStart:
   - {fileID: 1627065435}
   - {fileID: 2025914537}
@@ -18117,7 +18459,7 @@ MonoBehaviour:
   BookEnding1: {fileID: 0}
   BookEnding2: {fileID: 0}
   BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
+  Success1: {fileID: 1376193702}
   Success2: {fileID: 1677868901}
   Success3: {fileID: 1622999057}
   cnt: 0
@@ -19730,7 +20072,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: a5f19ac4427499e4580caeddf6f347c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22165,6 +22507,7 @@ MonoBehaviour:
   CardPopEle: []
   SelectedCard: {fileID: 0}
   SwitchBtn: {fileID: 0}
+  BackgroundEle: []
   tmp: 0
   ENTCard: []
   DentalCard: []

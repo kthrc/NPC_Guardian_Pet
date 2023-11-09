@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Dental : MonoBehaviour
 {
+   
     // Card Choice
     public GameObject DentalCard1;
     public GameObject DentalCard2;
@@ -49,10 +50,16 @@ public class Dental : MonoBehaviour
     public GameObject Success2;
     public GameObject Success3;
 
+    
     public int cnt = 0;
     public static int index = 0;
-
-
+    
+    void Start()
+    {
+        
+        //mainBg.SetActive(false);
+        //clickObj.GetComponent<Dental>().OnClickContinue();
+    }
     public void OnClick()
     {
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
@@ -356,11 +363,25 @@ public class Dental : MonoBehaviour
         }
     }*/
 
-    public void OnClickContinue()
+    public void OnClickContinue1()
     {
+        //2 3
         DentalCard2.SetActive(true);
         DentalCard3.SetActive(true);
 
+    }
+    public void OnClickContinue2()
+    {
+        // 1 3
+        DentalCard1.SetActive(true);
+        DentalCard3.SetActive(true);
+
+    }
+    public void OnClickContinue3()
+    {
+        //1 2
+        DentalCard1.SetActive(true);
+        DentalCard2.SetActive(true);
 
     }
 }
