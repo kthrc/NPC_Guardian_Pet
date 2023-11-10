@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 97412036}
   - component: {fileID: 97412037}
   m_Layer: 0
-  m_Name: 3-1-3
+  m_Name: 2-1-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3404,7 +3404,7 @@ GameObject:
   - component: {fileID: 260921033}
   - component: {fileID: 260921034}
   m_Layer: 0
-  m_Name: 3-2-4
+  m_Name: 2-2-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3542,7 +3542,7 @@ GameObject:
   - component: {fileID: 284057477}
   - component: {fileID: 284057478}
   m_Layer: 0
-  m_Name: 3-3-2
+  m_Name: 2-3-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4895,7 +4895,7 @@ GameObject:
   - component: {fileID: 454214698}
   - component: {fileID: 454214699}
   m_Layer: 0
-  m_Name: 3-3-4
+  m_Name: 2-3-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8569,7 +8569,7 @@ GameObject:
   - component: {fileID: 917428211}
   - component: {fileID: 917428212}
   m_Layer: 0
-  m_Name: 3-2-3
+  m_Name: 2-2-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11978,7 +11978,7 @@ GameObject:
   - component: {fileID: 1217910267}
   - component: {fileID: 1217910263}
   m_Layer: 5
-  m_Name: DentalCard3
+  m_Name: EyeCard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12118,7 +12118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb979e0d60c4168438530000e750e177, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0374b0616a04c3142bace1583e3a3bce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12687,7 +12687,7 @@ GameObject:
   - component: {fileID: 1261503246}
   - component: {fileID: 1261503247}
   m_Layer: 0
-  m_Name: 3-3-1
+  m_Name: 2-3-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13222,7 +13222,7 @@ GameObject:
   - component: {fileID: 1317347028}
   - component: {fileID: 1317347029}
   m_Layer: 0
-  m_Name: 3-2-1
+  m_Name: 2-2-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16296,7 +16296,7 @@ GameObject:
   - component: {fileID: 1557345303}
   - component: {fileID: 1557345304}
   m_Layer: 0
-  m_Name: 3-3-3
+  m_Name: 2-3-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16791,7 +16791,7 @@ GameObject:
   - component: {fileID: 1598952133}
   - component: {fileID: 1598952128}
   m_Layer: 5
-  m_Name: DentalCard2
+  m_Name: EyeCard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16911,7 +16911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb979e0d60c4168438530000e750e177, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed595cdbef63b98459c54e10fdf82060, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17126,7 +17126,7 @@ GameObject:
   - component: {fileID: 1617797413}
   - component: {fileID: 1617797414}
   m_Layer: 0
-  m_Name: 3-2-2
+  m_Name: 2-2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17290,7 +17290,7 @@ GameObject:
   - component: {fileID: 1627065436}
   - component: {fileID: 1627065437}
   m_Layer: 0
-  m_Name: 3-1-1
+  m_Name: 2-1-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18197,7 +18197,7 @@ GameObject:
   - component: {fileID: 1680508871}
   - component: {fileID: 1680508872}
   m_Layer: 0
-  m_Name: 3-1-4
+  m_Name: 2-1-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18285,7 +18285,7 @@ GameObject:
   - component: {fileID: 1697541527}
   - component: {fileID: 1697541522}
   m_Layer: 5
-  m_Name: DentalCard1
+  m_Name: EyeCard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18405,7 +18405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb979e0d60c4168438530000e750e177, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab7291ddc7df36246920a280180486df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21470,7 +21470,7 @@ GameObject:
   - component: {fileID: 2025914538}
   - component: {fileID: 2025914539}
   m_Layer: 0
-  m_Name: 3-1-2
+  m_Name: 2-1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
