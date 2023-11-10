@@ -42,16 +42,22 @@ public class DentalMission : MonoBehaviour
 
     Vector2 startingPos; // 진동 효과 위해서 넣어놓음222 (구현 안 됨 ㅠ)
 
-    public static int[] DenState = new int[3];
-    /*public static int[] ENTState;
-    public static int[] EyeState;*/
-
-    void Update()
+    void Awake()
     {
         startingPos.x = transform.position.x;
         startingPos.y = transform.position.y;
+    }
 
-        //Success1.GetComponent<Dental>().OnClickContinue3();
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 
     public void OnM1Click()
@@ -59,10 +65,14 @@ public class DentalMission : MonoBehaviour
 
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
-        
+        /*if(M1_end == 1) // flag end 값 1이면 종료
+        {
+            M1.SetActive(false);
+
+        }*/
         if (clickObject == M1_Eye) // X 출력하고 펫이 설명해줘야됨
         {
-            M1_OBtn.SetActive(true); //X출력
+            M1_XBtn1.SetActive(true); //X출력
             GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
@@ -74,7 +84,7 @@ public class DentalMission : MonoBehaviour
 
         if (clickObject == M1_Dental) // O 출력
         {
-            M1_XBtn1.SetActive(true); //
+            M1_OBtn.SetActive(true); //
 
             /*M1_end = 1; // flag 값
             M1.SetActive(false);
@@ -105,15 +115,15 @@ public class DentalMission : MonoBehaviour
         // O 버튼 선택 시 ->  정답
         if (clickObj == M2_O)
         {
-            //M2_X.SetActive(false);
+            M2_X.SetActive(false);
 
             GuardianPetText.text = "";
 
-            /*Vector3 position = M2_O.transform.localPosition;
+            Vector3 position = M2_O.transform.localPosition;
             position.x = 1780;
             position.y = 1870;
             M2_O.transform.localPosition = position;
-*/
+
 
             Invoke("M2ToM3", 0.2f); // 시간 차를 주고 NextMission 으로 넘김
             // 삽입된 미션 -> 다시 책으로 돌아감
@@ -135,12 +145,12 @@ public class DentalMission : MonoBehaviour
             */
 
 
-           /* Vector3 position = M2_X.transform.localPosition;
+            Vector3 position = M2_X.transform.localPosition;
             position.x = 2500;
             position.y = 1870;
             M2_X.transform.localPosition = position;
             transform.localScale = new Vector3(3f, 3f, 3f);
-*/
+
         }
     }
 
@@ -149,28 +159,24 @@ public class DentalMission : MonoBehaviour
     {
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
-        if (clickObj == M3_DCard1)// -> 정답
+        if (clickObj == M3_DCard1)
         {
+
+            M3_XBtn1.SetActive(true); //X출력
+
+            GuardianPetText.text = "다시 한 번 생각해봐";
+        }
+
+        if (clickObj == M3_DCard2) // -> 정답
+        {
+
             M3_OBtn.SetActive(true); // O출력
 
             GuardianPetText.text = "";
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            DenState[1] = 1;
-            Success1.SetActive(true); // 해결
-
-            //OnClickToAnother();
-        }
-
-        if (clickObj == M3_DCard2) 
-        {
-
-            M3_XBtn1.SetActive(true);// X 출력
-
-            GuardianPetText.text = "다시 한 번 생각해봐";
-
-           
+            Success1.SetActive(true); // -> 
 
         }
 
@@ -181,133 +187,5 @@ public class DentalMission : MonoBehaviour
 
             GuardianPetText.text = "다시 한 번 생각해봐";
         }
-    }
-
-
-    public void OnM6Click()
-    {
-        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
-
-        if (clickObj == M3_DCard2)// -> 정답
-        {
-            M3_OBtn.SetActive(true); // O출력
-
-            GuardianPetText.text = "";
-
-            // 다음으로 넘어감 (펫 획득 UI!)
-            M3.SetActive(false);
-            DenState[2] = 1;
-            Success2.SetActive(true); // -> 
-        }
-
-        if (clickObj == M3_DCard1)
-        {
-
-            M3_XBtn1.SetActive(true);// X 출력
-
-            GuardianPetText.text = "다시 한 번 생각해봐";
-
-
-
-        }
-
-        if (clickObj == M3_DCard3)
-        {
-
-            M3_XBtn2.SetActive(true); //X출력
-
-            GuardianPetText.text = "다시 한 번 생각해봐";
-        }
-    }
-
-    //M9
-    public void OnM9Click()
-    {
-        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
-
-        if (clickObj == M3_DCard3)// -> 정답
-        {
-            M3_OBtn.SetActive(true); // O출력
-
-            GuardianPetText.text = "";
-
-            // 다음으로 넘어감 (펫 획득 UI!)
-            M3.SetActive(false);
-            DenState[2] = 1;
-            Success3.SetActive(true); // -> 
-        }
-
-        if (clickObj == M3_DCard1)
-        {
-
-            M3_XBtn1.SetActive(true);// X 출력
-
-            GuardianPetText.text = "다시 한 번 생각해봐";
-        }
-
-        if (clickObj == M3_DCard2)
-        {
-
-            M3_XBtn2.SetActive(true); //X출력
-
-            GuardianPetText.text = "다시 한 번 생각해봐";
-        }
-    }
-
-    public void ContinueGame1()
-    {
-        //Success1.SetActive(false);
-        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
-
-         Vector3 p = Success1.transform.localPosition;
-         p.x = -100;
-         p.y = 0;
-         Success1.transform.localPosition = p;
-         transform.localScale = new Vector3(3, 3f, 3f);
-
-
-        Success1.SetActive(true);
-        clickObj.GetComponent<Dental>().OnClickContinue1();
-        
-    }
-    public void ContinueGame2()
-    {
-        //Success1.SetActive(false);
-        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
-
-        Vector3 p = Success2.transform.localPosition;
-        p.x = 0;
-        p.y = 0;
-        Success2.transform.localPosition = p;
-        transform.localScale = new Vector3(1, 1f, 1f);
-
-
-        Success2.SetActive(true);
-        clickObj.GetComponent<Dental>().OnClickContinue2();
-
-    }
-    public void ContinueGame3()
-    {
-        //Success1.SetActive(false);
-        GameObject clickObj = EventSystem.current.currentSelectedGameObject;
-
-        Vector3 p = Success3.transform.localPosition;
-        p.x = 0;
-        p.y = 0;
-        Success1.transform.localPosition = p;
-        transform.localScale = new Vector3(1, 1f, 1f);
-
-
-        Success3.SetActive(true);
-        clickObj.GetComponent<Dental>().OnClickContinue3();
-
-    }
-    public void GoToMain()
-    {
-        if (DenState[0] == 1 &&
-            DenState[1] == 1 &&
-            DenState[2] == 1) {
-            SceneManager.LoadScene("3_Main");
-                }
     }
 }
