@@ -11976,7 +11976,6 @@ GameObject:
   - component: {fileID: 1217910265}
   - component: {fileID: 1217910264}
   - component: {fileID: 1217910267}
-  - component: {fileID: 1217910263}
   m_Layer: 5
   m_Name: EyeCard3
   m_TagString: Untagged
@@ -12004,44 +12003,6 @@ RectTransform:
   m_AnchoredPosition: {x: -300, y: 0}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1217910263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217910261}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5692414267a2941be9c6339efb5549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DentalCard1: {fileID: 1697541521}
-  DentalCard2: {fileID: 1598952127}
-  DentalCard3: {fileID: 1217910261}
-  SelectedCard: {fileID: 0}
-  Book: {fileID: 1007739815}
-  BookStart:
-  - {fileID: 1261503245}
-  - {fileID: 284057476}
-  - {fileID: 1557345302}
-  - {fileID: 454214697}
-  Mission1: {fileID: 0}
-  Mission2: {fileID: 0}
-  Mission3: {fileID: 0}
-  Mission4: {fileID: 0}
-  Mission5: {fileID: 0}
-  Mission6: {fileID: 0}
-  Mission7: {fileID: 0}
-  Mission8: {fileID: 0}
-  Mission9: {fileID: 0}
-  BookEnding1: {fileID: 0}
-  BookEnding2: {fileID: 0}
-  BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
-  cnt: 0
 --- !u!114 &1217910264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16789,7 +16750,6 @@ GameObject:
   - component: {fileID: 1598952130}
   - component: {fileID: 1598952129}
   - component: {fileID: 1598952133}
-  - component: {fileID: 1598952128}
   m_Layer: 5
   m_Name: EyeCard2
   m_TagString: Untagged
@@ -16797,44 +16757,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1598952128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598952127}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5692414267a2941be9c6339efb5549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DentalCard1: {fileID: 1697541521}
-  DentalCard2: {fileID: 1598952127}
-  DentalCard3: {fileID: 1217910261}
-  SelectedCard: {fileID: 0}
-  Book: {fileID: 1002774551}
-  BookStart:
-  - {fileID: 1317347027}
-  - {fileID: 1617797412}
-  - {fileID: 917428210}
-  - {fileID: 260921032}
-  Mission1: {fileID: 1882756193}
-  Mission2: {fileID: 2120736890}
-  Mission3: {fileID: 591956442}
-  Mission4: {fileID: 1198323695}
-  Mission5: {fileID: 0}
-  Mission6: {fileID: 0}
-  Mission7: {fileID: 0}
-  Mission8: {fileID: 0}
-  Mission9: {fileID: 0}
-  BookEnding1: {fileID: 0}
-  BookEnding2: {fileID: 0}
-  BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
-  cnt: 0
 --- !u!114 &1598952129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18283,7 +18205,6 @@ GameObject:
   - component: {fileID: 1697541524}
   - component: {fileID: 1697541523}
   - component: {fileID: 1697541527}
-  - component: {fileID: 1697541522}
   m_Layer: 5
   m_Name: EyeCard1
   m_TagString: Untagged
@@ -18291,44 +18212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1697541522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697541521}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5692414267a2941be9c6339efb5549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DentalCard1: {fileID: 1697541521}
-  DentalCard2: {fileID: 1598952127}
-  DentalCard3: {fileID: 1217910261}
-  SelectedCard: {fileID: 0}
-  Book: {fileID: 326304127}
-  BookStart:
-  - {fileID: 1627065435}
-  - {fileID: 2025914537}
-  - {fileID: 97412035}
-  - {fileID: 1680508870}
-  Mission1: {fileID: 0}
-  Mission2: {fileID: 0}
-  Mission3: {fileID: 0}
-  Mission4: {fileID: 0}
-  Mission5: {fileID: 0}
-  Mission6: {fileID: 0}
-  Mission7: {fileID: 0}
-  Mission8: {fileID: 0}
-  Mission9: {fileID: 0}
-  BookEnding1: {fileID: 0}
-  BookEnding2: {fileID: 0}
-  BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
-  cnt: 0
 --- !u!114 &1697541523
 MonoBehaviour:
   m_ObjectHideFlags: 0
