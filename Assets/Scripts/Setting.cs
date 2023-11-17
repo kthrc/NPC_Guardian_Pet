@@ -10,6 +10,7 @@ public class Setting : MonoBehaviour
     public GameObject SettingPop;
     public GameObject SoundPop;
 
+    public GameObject SoundManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +48,7 @@ public class Setting : MonoBehaviour
         if (clickObject.name == "SoundXBtn") //
         {
             SoundPop.SetActive(false);
+            SoundManager.GetComponent<SoundManager>().OnSfx();
         }
         if (clickObject.name == "NotiBtn") //
         {
