@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DontDestroyObject : MonoBehaviour
 {
     public GameObject obj;
-    public GameObject mainBg;
+    //public GameObject mainBg;
     public void Awake()
     {
         Scene scene = SceneManager.GetActiveScene();
