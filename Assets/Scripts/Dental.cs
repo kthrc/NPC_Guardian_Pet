@@ -44,19 +44,17 @@ public class Dental : MonoBehaviour
     public int cnt = 0;
     public static int index = 0;
 
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool b1 = true;
+    public bool b2 = true;
+    public bool b3 = true;
 
-    // Update is called once per frame
-    void Update()
+    public void ReadyCard(bool b1, bool b2, bool b3)
     {
-        
-    }
+        DentalCard1.SetActive(b1);
+        DentalCard2.SetActive(b2);
+        DentalCard3.SetActive(b3);
 
+    }
     public void OnClick()
     {
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
@@ -153,7 +151,7 @@ public class Dental : MonoBehaviour
             //병원 아이콘 옆에 놓기
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
 
             //팝업 책 (회색 배경)
             SelectedCard.SetActive(false);
@@ -179,7 +177,7 @@ public class Dental : MonoBehaviour
 
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
 
             //팝업 책 
             //Book.SetActive(true);
@@ -205,7 +203,7 @@ public class Dental : MonoBehaviour
 
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
 /*
             BookStart[0].SetActive(true);
             SelectedCard.SetActive(false);*/
