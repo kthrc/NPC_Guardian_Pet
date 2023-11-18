@@ -7,27 +7,42 @@ using UnityEngine.SceneManagement;
 
 public class NextBtn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //스크립트
+    public GameObject Dental;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // 카드 획득 오브젝트
+    public GameObject Success1;
+    public GameObject Success2;
+    public GameObject Success3;
+
+    public static bool b1 = true;
+    public static bool b2 = true;
+    public static bool b3 = true;
 
     public void OnClick()
     {
-        // Go To NextScene(for clickObject)
+        GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
-        /*GameObject clickObject = EventSystem.current.currentSelectedGameObject;
-        // crime success 
-        if (clickObject.name == "") //
+        if (clickObject.name == "S1NextBtn")
         {
-            SceneManager.LoadScene(""); //
-        }*/
+            Success1.SetActive(false);
+            b1 = false;
+            Dental.GetComponent<Dental>().ReadyCard(b1, b2, b3);
+        }
+
+        if (clickObject.name == "S2NextBtn")
+        {
+            Success2.SetActive(false);
+            b2 = false;
+            Dental.GetComponent<Dental>().ReadyCard(b1, b2, b3);
+        }
+
+        if (clickObject.name == "S3NextBtn")
+        {
+            Success3.SetActive(false);
+            b3 = false;
+            Dental.GetComponent<Dental>().ReadyCard(b1, b2, b3);
+        }
+
     }
 }
