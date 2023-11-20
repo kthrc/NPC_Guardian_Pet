@@ -237,7 +237,7 @@ public class Dental : MonoBehaviour
         //병원 아이콘 옆에 놓기
         transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-        SelectedCard.SetActive(true);
+        //SelectedCard.SetActive(true);
 
     }
     public void B2ToM4() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
@@ -257,7 +257,7 @@ public class Dental : MonoBehaviour
         //병원 아이콘 옆에 놓기
         transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-        SelectedCard.SetActive(true);
+        //SelectedCard.SetActive(true);
     }
     public void B3ToM7() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
     {
@@ -276,7 +276,7 @@ public class Dental : MonoBehaviour
         //병원 아이콘 옆에 놓기
         transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-        SelectedCard.SetActive(true);
+        //SelectedCard.SetActive(true);
     }
     //BookStart 함수(카드 선택 후 이야기 진행!)
     public void OnNextClick()

@@ -109,11 +109,11 @@ public class DentalMission : MonoBehaviour
 
             GuardianPetText.text = "";
 
-            Vector3 position = M2_O.transform.localPosition;
+            /*Vector3 position = M2_O.transform.localPosition;
             position.x = 1780;
             position.y = 1870;
             M2_O.transform.localPosition = position;
-
+*/
 
             Invoke("M2ToM3", 0.2f); // 시간 차를 주고 NextMission 으로 넘김
             // 삽입된 미션 -> 다시 책으로 돌아감
@@ -135,11 +135,11 @@ public class DentalMission : MonoBehaviour
             */
 
 
-            Vector3 position = M2_X.transform.localPosition;
+            /*Vector3 position = M2_X.transform.localPosition;
             position.x = 2500;
             position.y = 1870;
             M2_X.transform.localPosition = position;
-            transform.localScale = new Vector3(3f, 3f, 3f);
+            transform.localScale = new Vector3(3f, 3f, 3f);*/
 
         }
     }
