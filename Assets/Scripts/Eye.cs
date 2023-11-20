@@ -14,9 +14,11 @@ public class Eye : MonoBehaviour
     public GameObject EyeCard3;
 
     // 선택된 카드(확대샷)
-    public GameObject SelectedCard1;
-    public GameObject SelectedCard2;
-    public GameObject SelectedCard3;
+
+    public GameObject SelectedCard;
+    //public GameObject SelectedCard1;
+    //public GameObject SelectedCard2;
+    //public GameObject SelectedCard3;
 
     public GameObject Book;
 
@@ -77,7 +79,9 @@ public class Eye : MonoBehaviour
             EyeCard3.SetActive(false);
 
             //선택된 카드 확대샷
-            SelectedCard1.SetActive(true);
+
+            SelectedCard = EyeCard1;
+            SelectedCard.SetActive(true);
 
             ChapterName.text = "이가 썩었어요";
 
@@ -92,7 +96,8 @@ public class Eye : MonoBehaviour
             EyeCard3.SetActive(false);
 
             //선택된 카드 확대샷
-            SelectedCard2.SetActive(true);
+            SelectedCard = EyeCard2;
+            SelectedCard.SetActive(true);
             ChapterName.text = "이가 빠졌어요";
         }
 
@@ -104,7 +109,8 @@ public class Eye : MonoBehaviour
             EyeCard3.SetActive(false);
 
             //선택된 카드 확대샷
-            SelectedCard3.SetActive(true);
+            SelectedCard = EyeCard3;
+            SelectedCard.SetActive(true);
 
             ChapterName.text = "이가 부러졌어요";
         }
@@ -123,13 +129,13 @@ public class Eye : MonoBehaviour
         Debug.Log("Double Click " + cnt);
 
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
-        SelectedCard1.SetActive(false);
-        SelectedCard2.SetActive(false);
-        SelectedCard3.SetActive(false);
+        EyeCard1.SetActive(false);
+        EyeCard2.SetActive(false);
+        EyeCard3.SetActive(false);
 
 
         // Choice Card1 증상카드1
-        if (clickObj = SelectedCard1) //
+        if (clickObj = EyeCard1) //
         {
             EyeCard1.SetActive(false);
             EyeCard2.SetActive(false);
@@ -149,7 +155,7 @@ public class Eye : MonoBehaviour
 
         }
         // Choice Card2 증상카드 2
-        if (clickObj.name == "SelectedCard2") //
+        if (clickObj.name == "EyeCard2") //
         {
             ChapterName.text = "이가 빠졌어요";
 
@@ -175,7 +181,7 @@ public class Eye : MonoBehaviour
 
         }
         // Choice Card3 증상카드 3
-        if (clickObj.name == "SelectedCard3")
+        if (clickObj.name == "EyeCard3")
         {
             EyeCard1.SetActive(false);
             EyeCard2.SetActive(false);
