@@ -16,14 +16,21 @@ public class ENT : MonoBehaviour
     public GameObject Book;
 
     // Card -> Book
-    public GameObject BookStart1;
+    public GameObject[] BookStart;
+    /*public GameObject BookStart1;
     public GameObject BookStart2;
-    public GameObject BookStart3;
+    public GameObject BookStart3;*/
 
     // Book -> Mission
     public GameObject Mission1;
     public GameObject Mission2;
     public GameObject Mission3;
+    public GameObject Mission4;
+    public GameObject Mission5;
+    public GameObject Mission6;
+    public GameObject Mission7;
+    public GameObject Mission8;
+    public GameObject Mission9;
 
     // Mission -> BookEnding
     public GameObject BookEnding1;
@@ -35,20 +42,23 @@ public class ENT : MonoBehaviour
     public GameObject Success2;
     public GameObject Success3;
 
+
     public int cnt = 0;
+    public static int index = 0;
+
+    public bool b1 = true;
+    public bool b2 = true;
+    public bool b3 = true;
 
     /* float screenHeightHalf = Camera.main.orthographicSize;
      float screenWidthHalf = screenHeightHalf * Camera.main.aspect;*/
 
     // Start is called before the first frame update
-    void Start()
+    public void ReadyCard(bool b1, bool b2, bool b3)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        ENTCard1.SetActive(b1);
+        ENTCard2.SetActive(b2);
+        ENTCard3.SetActive(b3);
 
     }
 
@@ -151,7 +161,7 @@ public class ENT : MonoBehaviour
             //병원 아이콘 옆에 놓기
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-            SelectedCard.SetActive(true);
+            SelectedCard.SetActive(false);
 
             //팝업 책 
             Book.SetActive(true);
@@ -173,7 +183,7 @@ public class ENT : MonoBehaviour
 
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-            SelectedCard.SetActive(true);
+            SelectedCard.SetActive(false);
 
             //팝업 책 
             Book.SetActive(true);
@@ -195,7 +205,7 @@ public class ENT : MonoBehaviour
 
             transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
-            SelectedCard.SetActive(true);
+            SelectedCard.SetActive(false);
 
             //팝업 책 
             Book.SetActive(true);
@@ -203,14 +213,124 @@ public class ENT : MonoBehaviour
         }
         cnt++;
     }
+    public void B1ToM1() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
+    {
+        //이야기 1에서 미션1로 넘어감
+        Book.SetActive(false);
 
+        Mission1.SetActive(true);
+
+        // 책 -> 미션 후에 병원 아이콘 옆에 생기는 선택된 카드 아이콘!
+        SelectedCard = ENTCard1;
+
+        // 선택된 카드 x, y 값 포지션 값 변경
+        Vector3 position = SelectedCard.transform.localPosition;
+        position.x = 100;
+        position.y = 950;
+        SelectedCard.transform.localPosition = position;
+
+        //병원 아이콘 옆에 놓기
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+        //SelectedCard.SetActive(true);
+
+    }
+    public void B2ToM4() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
+    {
+        //이야기 2에서 미션4로 넘어감
+        Book.SetActive(false);
+
+        Mission4.SetActive(true);
+        //////////////////////////////////////
+        SelectedCard = ENTCard2;
+
+        Vector3 position = SelectedCard.transform.localPosition;
+        position.x = 100;
+        position.y = 950;
+        SelectedCard.transform.localPosition = position;
+
+        //병원 아이콘 옆에 놓기
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+        //SelectedCard.SetActive(true);
+    }
+    public void B3ToM7() // 책에서 미션으로 넘어가는 Invoke 함수에 필요한 함수
+    {
+        //이야기 3에서 미션6로 넘어감
+        Book.SetActive(false);
+
+        Mission7.SetActive(true);
+        //////////////////////////////////////
+        SelectedCard = ENTCard3;
+
+        Vector3 position = SelectedCard.transform.localPosition;
+        position.x = 100;
+        position.y = 950;
+        SelectedCard.transform.localPosition = position;
+
+        //병원 아이콘 옆에 놓기
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+        //SelectedCard.SetActive(true);
+    }
     public void OnNextClick()
     {
         GameObject obj = EventSystem.current.currentSelectedGameObject;
 
-        if (obj.name == "BookNextBtn") //
+        // 이야기 1 next btn
+        if (obj.name == "BookNextBtn1") //
         {
-            //SelectedCard.SetActive(true);
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart[index].SetActive(false);
+            index++;
+            if (index != 3) // 스토리 안 끝나면
+            {
+                BookStart[index].SetActive(true);
+            }
+            if (index == 3) //스토리 끝나면 
+            {
+                Invoke("B1ToM1", 0.02f);
+                index = 0;
+            }
+        }
+
+
+        if (obj.name == "BookNextBtn2") //
+        {
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart[index].SetActive(false);
+            index++;
+            if (index != 3) // 스토리 안 끝나면
+            {
+                BookStart[index].SetActive(true);
+            }
+            if (index == 3) //스토리 끝나면 
+            {
+                Invoke("B2ToM4", 0.02f);
+                index = 0;
+            }
+        }
+
+        if (obj.name == "BookNextBtn3") //
+        {
+            Debug.Log("클릭 작동");
+            Debug.Log(index);
+
+            BookStart[index].SetActive(false);
+            index++;
+            if (index != 3) // 스토리 안 끝나면
+            {
+                BookStart[index].SetActive(true);
+            }
+            if (index == 3) //스토리 끝나면 
+            {
+                Invoke("B3ToM7", 0.02f);
+                index = 0;
+            }
         }
     }
 }
