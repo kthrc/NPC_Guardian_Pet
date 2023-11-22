@@ -63,13 +63,13 @@ public class ENTMission : MonoBehaviour
         if (clickObject == M1_Eye) // X 출력하고 펫이 설명해줘야됨
         {
             M1_XBtn1.SetActive(true); //X출력
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObject == M1_Dental) // X 출력하고 펫이 설명해줘야됨
         {
             M1_XBtn2.SetActive(true); //X출력
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObject == M1_ENT) // O 출력
@@ -107,7 +107,7 @@ public class ENTMission : MonoBehaviour
         {
             M2_X.SetActive(false);
 
-            GuardianPetText.text = "";
+            //GuardianPetText.text = "";
 
             /*Vector3 position = M2_O.transform.localPosition;
             position.x = 1780;
@@ -127,7 +127,7 @@ public class ENTMission : MonoBehaviour
         // X 버튼 선택 시 -> 진동 효과 어떻게..?
         if (clickObj == M2_X)
         {
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
             /*
                         M2_X.transform.position.x = startingPos.x + (Mathf.Sin(Time.time * 1) * 1);
 
@@ -153,7 +153,7 @@ public class ENTMission : MonoBehaviour
         {
             M3_OBtn.SetActive(true); // O출력
 
-            GuardianPetText.text = "";
+            //GuardianPetText.text = "";
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
@@ -166,7 +166,7 @@ public class ENTMission : MonoBehaviour
 
             M3_XBtn1.SetActive(true); //X출력
 
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
 
@@ -175,7 +175,7 @@ public class ENTMission : MonoBehaviour
 
             M3_XBtn2.SetActive(true); //X출력
 
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
     }
 
@@ -188,7 +188,7 @@ public class ENTMission : MonoBehaviour
 
             M3_XBtn1.SetActive(true); //X출력
 
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObj == M3_DCard2) // -> 정답
@@ -196,7 +196,7 @@ public class ENTMission : MonoBehaviour
 
             M3_OBtn.SetActive(true); // O출력
 
-            GuardianPetText.text = "";
+            //GuardianPetText.text = "";
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
@@ -209,7 +209,7 @@ public class ENTMission : MonoBehaviour
 
             M3_XBtn2.SetActive(true); //X출력
 
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
     }
 
@@ -221,7 +221,7 @@ public class ENTMission : MonoBehaviour
         {
             M3_XBtn1.SetActive(true); //X출력
 
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObj == M3_DCard2)
@@ -229,7 +229,7 @@ public class ENTMission : MonoBehaviour
 
             M3_XBtn2.SetActive(true); //X출력
 
-            GuardianPetText.text = "다시 한 번 생각해봐";
+            //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObj == M3_DCard3) // -> 정답
@@ -237,11 +237,11 @@ public class ENTMission : MonoBehaviour
 
             M3_OBtn.SetActive(true); // O출력
 
-            GuardianPetText.text = "";
+            //GuardianPetText.text = "";
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            Success1.SetActive(true); // -> 
+            Success3.SetActive(true); // -> 
 
         }
     }

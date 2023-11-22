@@ -56,6 +56,17 @@ public class Eye : MonoBehaviour
     public int cnt = 0;
     public static int index = 0;
 
+    public bool b1 = true;
+    public bool b2 = true;
+    public bool b3 = true;
+
+    public void ReadyCard(bool b1, bool b2, bool b3)
+    {
+        EyeCard1.SetActive(b1);
+        EyeCard2.SetActive(b2);
+        EyeCard3.SetActive(b3);
+
+    }
     public void Awake()
     {
         if (EyeCard1.activeSelf == true) // 카드 켜져있으면 성공카드 끄기
@@ -83,7 +94,7 @@ public class Eye : MonoBehaviour
             SelectedCard = EyeCard1;
             SelectedCard.SetActive(true);
 
-            ChapterName.text = "이가 썩었어요";
+            //ChapterName.text = "이가 썩었어요";
 
 
         }

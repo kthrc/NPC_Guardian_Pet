@@ -556,9 +556,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -582,6 +580,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &83044514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,9 +1344,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -1369,6 +1368,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &163807872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1671,9 +1673,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -1697,6 +1697,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &202522427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2654,9 +2657,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -2680,6 +2681,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &234904163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3145,9 +3149,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -3171,6 +3173,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &286057299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,9 +3801,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -3822,6 +3825,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &394167639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8953,9 +8959,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -8979,6 +8983,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1159988877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9290,9 +9297,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -9316,6 +9321,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1171379657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9533,9 +9541,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -9559,6 +9565,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1181459963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9920,9 +9929,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 1697541521}
   EyeCard2: {fileID: 1598952127}
   EyeCard3: {fileID: 1217910261}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 1007739815}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -9950,6 +9957,9 @@ MonoBehaviour:
   Success2: {fileID: 1831403923}
   Success3: {fileID: 1154702228}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!1 &1229581455
 GameObject:
   m_ObjectHideFlags: 0
@@ -11415,9 +11425,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -11441,6 +11449,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1332353124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11658,9 +11669,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -11684,6 +11693,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1332656442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12676,9 +12688,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -12702,6 +12712,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1507747810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12919,9 +12932,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -12945,6 +12956,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1524697573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13246,9 +13260,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -13272,6 +13284,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1537071667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14199,9 +14214,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 1697541521}
   EyeCard2: {fileID: 1598952127}
   EyeCard3: {fileID: 1217910261}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 1002774551}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -14229,6 +14242,9 @@ MonoBehaviour:
   Success2: {fileID: 1831403923}
   Success3: {fileID: 1154702228}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!1 &1616905882
 GameObject:
   m_ObjectHideFlags: 0
@@ -14782,9 +14798,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -14808,6 +14822,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1638198151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15662,9 +15679,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 1697541521}
   EyeCard2: {fileID: 1598952127}
   EyeCard3: {fileID: 1217910261}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 326304127}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -15692,6 +15707,9 @@ MonoBehaviour:
   Success2: {fileID: 1831403923}
   Success3: {fileID: 1154702228}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!1 &1699652101
 GameObject:
   m_ObjectHideFlags: 0
@@ -17087,9 +17105,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -17113,6 +17129,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1856369756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17330,9 +17349,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 1697541521}
   EyeCard2: {fileID: 1598952127}
   EyeCard3: {fileID: 1217910261}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -17356,6 +17373,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1856872669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17828,9 +17848,7 @@ MonoBehaviour:
   EyeCard1: {fileID: 0}
   EyeCard2: {fileID: 0}
   EyeCard3: {fileID: 0}
-  SelectedCard1: {fileID: 0}
-  SelectedCard2: {fileID: 0}
-  SelectedCard3: {fileID: 0}
+  SelectedCard: {fileID: 0}
   Book: {fileID: 0}
   Renderer: {fileID: 0}
   Card1: {fileID: 0}
@@ -17854,6 +17872,9 @@ MonoBehaviour:
   Success2: {fileID: 0}
   Success3: {fileID: 0}
   cnt: 0
+  b1: 1
+  b2: 1
+  b3: 1
 --- !u!114 &1918944647
 MonoBehaviour:
   m_ObjectHideFlags: 0

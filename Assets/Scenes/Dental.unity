@@ -3365,6 +3365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dental: {fileID: 1217910261}
+  ENT: {fileID: 0}
+  Eye: {fileID: 0}
   Success1: {fileID: 1812531823}
   Success2: {fileID: 1831403923}
   Success3: {fileID: 1154702228}
@@ -3414,7 +3416,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 396339619}
         m_TargetAssemblyTypeName: NextBtn, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: OnDentalNextBtnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8561,7 +8563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1161773473
 Transform:
   m_ObjectHideFlags: 0
@@ -9140,7 +9142,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1183312661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1183312663}
+        m_TargetAssemblyTypeName: NextBtn, Assembly-CSharp
+        m_MethodName: OnDentalNextBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1183312661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9192,6 +9206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dental: {fileID: 1598952127}
+  ENT: {fileID: 0}
+  Eye: {fileID: 0}
   Success1: {fileID: 1812531823}
   Success2: {fileID: 1831403923}
   Success3: {fileID: 1154702228}
@@ -17661,9 +17677,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dental: {fileID: 1598952127}
+  ENT: {fileID: 0}
+  Eye: {fileID: 0}
   Success1: {fileID: 1812531823}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
+  Success2: {fileID: 1831403923}
+  Success3: {fileID: 1154702228}
 --- !u!114 &2062862672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17710,7 +17728,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2062862671}
         m_TargetAssemblyTypeName: NextBtn, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: OnDentalNextBtnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
