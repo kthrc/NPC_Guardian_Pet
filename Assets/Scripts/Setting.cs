@@ -14,7 +14,6 @@ public class Setting : MonoBehaviour
     public GameObject[] CardPopEle; // 카드 팝업 요소(카드 확대샷 할 때 요소 없애야됨)
     public GameObject SelectedCard; // 선택된 카드(for 팝업!)
     public GameObject SwitchBtn; // 선택된 카드 옆에 생기는 전환 버튼 오브젝트
-    public GameObject CloseupCardXBtn;
 
     public static int idx = 0;
     public int tmp = 0;
@@ -70,362 +69,35 @@ public class Setting : MonoBehaviour
             CardPop.SetActive(false);
 
         }
-        if(clickObject == CloseupCardXBtn) 
-        {
-            if(clickObject.name == "Eye1CloseupCardXBtn")
-            {
-                
-                EyeCard[0].SetActive(false);
 
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            if (clickObject.name == "Eye2CloseupCardXBtn")
-            {
-
-                EyeCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            if (clickObject.name == "Eye3CloseupCardXBtn")
-            {
-
-                EyeCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            if (clickObject.name == "ENT1CloseupCardXBtn")
-            {
-
-                ENTCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            if (clickObject.name == "ENT2CloseupCardXBtn")
-            {
-
-                ENTCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            if (clickObject.name == "ENT3CloseupCardXBtn")
-            {
-
-                ENTCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            if (clickObject.name == "Dental1CloseupCardXBtn")
-            {
-
-                DentalCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-
-            
-            if (clickObject.name == "Dental2CloseupCardXBtn")
-            {
-
-                DentalCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-            if (clickObject.name == "Dental3CloseupCardXBtn")
-            {
-
-                DentalCard[0].SetActive(false);
-
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(true);
-            }
-        }
-        if (clickObject.name == "EyeCard1") // touch card in inventory
+        if (clickObject.name == "ENTCard1")
         {
             //CardPop.SetActive(false);
             SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
+            Debug.Log("tmp: " + tmp);
 
-            //if (tmp == 0)
+            if (tmp == 0)
             {
-                for (int i = 0; i < 13; i++)
+                for (int i = 0; i < 7; i++)
                     CardPopEle[i].SetActive(false);
                 SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
                 Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -30;
-                position.y = 27;
+                position.x = 50;
+                position.y = -400;
                 SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                EyeCard[0].SetActive(true);
-                EyeCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-
-        if (clickObject.name == "EyeCard2") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -5;
-                position.y = 27;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                EyeCard[0].SetActive(true);
-                EyeCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-        if (clickObject.name == "EyeCard3") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = 30;
-                position.y = 27;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                EyeCard[0].SetActive(true);
-                EyeCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-        if (clickObject.name == "ENTCard1") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -30;
-                position.y = -5;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
+                transform.localScale = new Vector3(2f, 2f, 2f);
+                SelectedCard.SetActive(true);
                 ENTCard[0].SetActive(true);
                 ENTCard[1].SetActive(false);
-                //tmp++;
+                tmp++;
             }
             //SelectedCard.SetActive(true);
             SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
 
-        if (clickObject.name == "ENTCard2") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -5;
-                position.y = -5;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                ENTCard[0].SetActive(true);
-                ENTCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-        if (clickObject.name == "ENTCard3") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = 30;
-                position.y = -5;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                ENTCard[0].SetActive(true);
-                ENTCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-        if (clickObject.name == "DentalCard1") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -30;
-                position.y = -36;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                DentalCard[0].SetActive(true);
-                DentalCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-        if (clickObject.name == "DentalCard2") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -5;
-                position.y = -36;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                DentalCard[0].SetActive(true);
-                DentalCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
-        }
-
-        if (clickObject.name == "DentalCard3") // touch card in inventory
-        {
-            //CardPop.SetActive(false);
-            SettingPop.SetActive(false);
-            //Debug.Log("tmp: " + tmp);
-
-            //if (tmp == 0)
-            {
-                for (int i = 0; i < 13; i++)
-                    CardPopEle[i].SetActive(false);
-                SelectedCard = clickObject;
-                Debug.Log(SelectedCard);
-
-                Vector3 position = SelectedCard.transform.localPosition;
-                position.x = -30;
-                position.y = -36;
-                SelectedCard.transform.localPosition = position;
-
-                transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-                //SelectedCard.SetActive(true);
-
-                DentalCard[0].SetActive(true);
-                DentalCard[1].SetActive(false);
-                //tmp++;
-            }
-            //SelectedCard.SetActive(true);
-            SwitchBtn.SetActive(true);
-            CloseupCardXBtn.SetActive(true);
         }
     }
 
-    public void OnSwitchBtn() // Eye
+    public void OnSwitchBtn()
     {
         //SwitchBtn.SetActive(true); //
         Debug.Log("idx" + idx);
@@ -439,8 +111,8 @@ public class Setting : MonoBehaviour
             pos.y = 0;
             ENTCard[0].transform.localPosition = pos;
             transform.localScale = new Vector3(1f, 1f, 1f);*/
-            EyeCard[0].SetActive(true);
-            EyeCard[1].SetActive(false);
+            ENTCard[0].SetActive(true);
+            ENTCard[1].SetActive(false);
             /*SelectedCard = ENTCard[0]; // 할당 안 된대서 일단 할당;;
             SelectedCard.SetActive(true);*/
         }
@@ -451,8 +123,8 @@ public class Setting : MonoBehaviour
             position.y = 0;
             ENTCard[1].transform.localPosition = position;
             transform.localScale = new Vector3(1f, 1f, 1f);*/
-            EyeCard[0].SetActive(false);
-            EyeCard[1].SetActive(true);
+            ENTCard[0].SetActive(false);
+            ENTCard[1].SetActive(true);
             /*SelectedCard = ENTCard[1]; // 할당 안 된대서 일단 할당;;
             SelectedCard.SetActive(true);*/
         }
