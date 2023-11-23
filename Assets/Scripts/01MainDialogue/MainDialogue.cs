@@ -8,7 +8,10 @@ using System;
 public class MainDialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    public string[] senetences;
+    public string[] sentences = { "오늘은 어떤 이야기를 들을까?", "어느 병원으로 가볼까?", 
+                                    "수호펫들이 점점 많아지고 있는 것 같아.", 
+                                    "펫 도감 확인해봤어?! 나처럼 귀여운 친구들이 모여있대!",
+                                    "혹시 게임에 문제가 있다면, 동덕여자대학교 동아리 NPC로 알려줘!" };
     public float textSpeed;
 
     private int idx;
@@ -23,27 +26,27 @@ public class MainDialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == senetences[idx]) 
+            if (textComponent.text == sentences[idx])
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = senetences[idx];
+                textComponent.text = sentences[idx];
             }
         }
     }
 
     void StartDialogue()
     {
-        idx = 0;
+        idx = UnityEngine.Random.Range(0, sentences.Length);
         StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
     {
-        foreach (char c in senetences[idx].ToCharArray()) 
+        foreach (char c in sentences[idx].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -52,9 +55,9 @@ public class MainDialogue : MonoBehaviour
 
     void NextLine()
     {
-        if (idx < senetences.Length - 1)
+        if (idx < sentences.Length - 1)
         {
-            idx++;
+            idx = UnityEngine.Random.Range(0, sentences.Length);
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
@@ -62,6 +65,5 @@ public class MainDialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-
     }
 }
