@@ -42,6 +42,8 @@ public class DentalMission : MonoBehaviour
 
     Vector2 startingPos; // 진동 효과 위해서 넣어놓음222 (구현 안 됨 ㅠ)
 
+    public static int[] DenState = new int[9];
+
     void Awake()
     {
         startingPos.x = transform.position.x;
@@ -159,6 +161,7 @@ public class DentalMission : MonoBehaviour
             M3.SetActive(false);
             Success1.SetActive(true); // -> 
 
+            DenState[0] = 1;
         }
 
         if (clickObj == M3_DCard2)
@@ -202,6 +205,7 @@ public class DentalMission : MonoBehaviour
             M3.SetActive(false);
             Success2.SetActive(true); // -> 
 
+            DenState[1] = 1;
         }
 
         if (clickObj == M3_DCard3)
@@ -241,8 +245,9 @@ public class DentalMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            Success1.SetActive(true); // -> 
+            Success3.SetActive(true); // -> 
 
+            DenState[2] = 1;
         }
     }
 }
