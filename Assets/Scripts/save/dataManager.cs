@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine;using UnityEngine.EventSystems;
 using System.IO;
 
 //카드 하나 획득할때마다 해당 String 배열 자리에 1 쓰기
@@ -19,6 +19,16 @@ public class DataManager : MonoBehaviour
     PlayerData nowPlayer = new PlayerData();
     string path;
     string filename = "saveData";
+    //추가
+    public GameObject ENTCard1;
+    public GameObject ENTCard2;
+    public GameObject ENTCard3;
+    public GameObject EyeCard1;
+    public GameObject EyeCard2;
+    public GameObject EyeCard3;
+    public GameObject DentalCard1;
+    public GameObject DentalCard2;
+    public GameObject DentalCard3;
 
     private void Awake()
     {
@@ -43,6 +53,68 @@ public class DataManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void getCard()
+    {
+        //추가
+        if (ENTCard1) //카드를 획득하면
+        {
+            LoadData();
+            nowPlayer.card[0] = "1";
+            SaveData();
+        }
+        if (ENTCard2) 
+        {
+            LoadData();
+            nowPlayer.card[1] = "1";
+            SaveData();
+        }
+        if (ENTCard3)
+        {
+            LoadData();
+            nowPlayer.card[2] = "1";
+            SaveData();
+        }
+
+        if (EyeCard1) 
+        {
+            LoadData();
+            nowPlayer.card[3] = "1";
+            SaveData();
+        }
+        if (EyeCard2)
+        {
+            LoadData();
+            nowPlayer.card[4] = "1";
+            SaveData();
+        }
+        if (EyeCard3)
+        {
+            LoadData();
+            nowPlayer.card[5] = "1";
+            SaveData();
+        }
+
+        if (DentalCard1)
+        {
+            LoadData();
+            nowPlayer.card[6] = "1";
+            SaveData();
+        }
+        if (DentalCard2)
+        {
+            LoadData();
+            nowPlayer.card[7] = "1";
+            SaveData();
+        }
+        if (DentalCard3)
+        {
+            LoadData();
+            nowPlayer.card[8] = "1";
+            SaveData();
+        }
     }
 
     public void SaveData()
