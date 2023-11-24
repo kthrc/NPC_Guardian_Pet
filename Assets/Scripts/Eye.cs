@@ -16,10 +16,16 @@ public class Eye : MonoBehaviour
     // 선택된 카드(확대샷)
 
     public GameObject SelectedCard;
+    //public GameObject SelectedCard1;
+    //public GameObject SelectedCard2;
+    //public GameObject SelectedCard3;
 
     public GameObject Book;
 
-    
+    public SpriteRenderer Renderer;
+    public Sprite Card1;
+    public Sprite Card2;
+    public Sprite Card3;
 
     // Card -> Book
     public GameObject[] BookStart; // 
@@ -86,12 +92,6 @@ public class Eye : MonoBehaviour
             //선택된 카드 확대샷
 
             SelectedCard = EyeCard1;
-            Vector3 position = SelectedCard.transform.localPosition;
-            position.x = 0;
-            position.y = 0;
-            SelectedCard.transform.localPosition = position;
-            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-
             SelectedCard.SetActive(true);
 
             //ChapterName.text = "이가 썩었어요";
@@ -108,14 +108,8 @@ public class Eye : MonoBehaviour
 
             //선택된 카드 확대샷
             SelectedCard = EyeCard2;
-            Vector3 position = SelectedCard.transform.localPosition;
-            position.x = 0;
-            position.y = 0;
-            SelectedCard.transform.localPosition = position;
-            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-
             SelectedCard.SetActive(true);
-            //ChapterName.text = "이가 빠졌어요";
+            ChapterName.text = "이가 빠졌어요";
         }
 
         // choice 3
@@ -127,15 +121,9 @@ public class Eye : MonoBehaviour
 
             //선택된 카드 확대샷
             SelectedCard = EyeCard3;
-            Vector3 position = SelectedCard.transform.localPosition;
-            position.x = 0;
-            position.y = 0;
-            SelectedCard.transform.localPosition = position;
-            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-
             SelectedCard.SetActive(true);
 
-            //ChapterName.text = "이가 부러졌어요";
+            ChapterName.text = "이가 부러졌어요";
         }
 
         cnt++;
@@ -143,7 +131,7 @@ public class Eye : MonoBehaviour
         if (cnt == 1)
         {
 
-            OnDoubleClick();
+            Invoke("OnDoubleClick", 2f);
         }
     }
 
@@ -169,10 +157,10 @@ public class Eye : MonoBehaviour
 
             if (BookStart[0].activeSelf) // 챕터 이름(위에!) OK
             {
-                //ChapterName.text = "이가 썩었어요";
+                ChapterName.text = "이가 썩었어요";
             }
             //BookStart[0].SetActive(true);
-            //ChapterName.text = "이가 썩었어요";
+            ChapterName.text = "이가 썩었어요";
             //SelectedCard.SetActive(false);
             //BookStart1.SetActive(true);
 
@@ -180,7 +168,7 @@ public class Eye : MonoBehaviour
         // Choice Card2 증상카드 2
         if (clickObj.name == "EyeCard2") //
         {
-            //ChapterName.text = "이가 빠졌어요";
+            ChapterName.text = "이가 빠졌어요";
 
             EyeCard1.SetActive(false);
             EyeCard2.SetActive(false);
@@ -199,7 +187,7 @@ public class Eye : MonoBehaviour
             {
                 Debug.Log(".");
 
-                //ChapterName.text = "이가 빠졌어요";
+                ChapterName.text = "이가 빠졌어요";
             }
 
         }
@@ -222,11 +210,11 @@ public class Eye : MonoBehaviour
             //SelectedCard.SetActive(false);
             Book.SetActive(true); // 스토리로 이동
 
-            /*if (BookStart[2].activeSelf) // 챕터 이름(위에!)
+            if (BookStart[2].activeSelf) // 챕터 이름(위에!)
             {
                 ChapterName.text = "이가 부러졌어요";
             }
-            ChapterName.text = "이가 부러졌어요";*/
+            ChapterName.text = "이가 부러졌어요";
         }
         cnt++;
     }
@@ -237,7 +225,7 @@ public class Eye : MonoBehaviour
         Book.SetActive(false);
 
         Mission1.SetActive(true);
-        //ChapterName.text = "이가 썩었어요";
+        ChapterName.text = "이가 썩었어요";
         // 책 -> 미션 후에 병원 아이콘 옆에 생기는 선택된 카드 아이콘!
         /*SelectedCard = EyeCard1;
 
@@ -259,7 +247,7 @@ public class Eye : MonoBehaviour
         Book.SetActive(false);
 
         Mission4.SetActive(true);
-        //ChapterName.text = "이가 빠졌어요";
+        ChapterName.text = "이가 빠졌어요";
         //////////////////////////////////////
         /*SelectedCard = EyeCard2;
 
@@ -279,7 +267,7 @@ public class Eye : MonoBehaviour
         Book.SetActive(false);
 
         Mission7.SetActive(true);
-        //ChapterName.text = "이가 부러졌어요";
+        ChapterName.text = "이가 부러졌어요";
         //////////////////////////////////////
         /*SelectedCard = EyeCard3;
 
@@ -307,7 +295,7 @@ public class Eye : MonoBehaviour
         {
             Debug.Log("클릭 작동");
             Debug.Log(index);
-            //ChapterName.text = "이가 썩었어요";
+            ChapterName.text = "이가 썩었어요";
             BookStart[index].SetActive(false);
             index++;
             if (index != 4) // 스토리 안 끝나면
@@ -329,7 +317,7 @@ public class Eye : MonoBehaviour
         {
             Debug.Log("클릭 작동");
             Debug.Log(index);
-            //ChapterName.text = "이가 빠졌어요";
+            ChapterName.text = "이가 빠졌어요";
             BookStart[index].SetActive(false);
             index++;
             if (index != 4) // 스토리 안 끝나면
@@ -355,7 +343,7 @@ public class Eye : MonoBehaviour
             index++;
             if (index != 4) // 스토리 안 끝나면
             {
-                //ChapterName.text = "이가 부러졌어요";
+                ChapterName.text = "이가 부러졌어요";
                 BookStart[index].SetActive(true);
             }
             if (index == 4) //스토리 끝나면 
