@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 1353181711}
   - component: {fileID: 1353181710}
   - component: {fileID: 1353181709}
-  - component: {fileID: 1353181708}
+  - component: {fileID: 1353181712}
   m_Layer: 5
   m_Name: BookNextBtn1
   m_TagString: Untagged
@@ -906,50 +906,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 3484, y: 471}
+  m_AnchoredPosition: {x: 3462, y: 558}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1353181708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353181706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5692414267a2941be9c6339efb5549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DentalCard1: {fileID: 0}
-  DentalCard2: {fileID: 0}
-  DentalCard3: {fileID: 0}
-  SelectedCard: {fileID: 0}
-  Book: {fileID: 283453088}
-  BookStart:
-  - {fileID: 868964348}
-  - {fileID: 1694644248}
-  - {fileID: 29645235}
-  - {fileID: 1595900511}
-  Mission1: {fileID: 0}
-  Mission2: {fileID: 0}
-  Mission3: {fileID: 0}
-  Mission4: {fileID: 0}
-  Mission5: {fileID: 0}
-  Mission6: {fileID: 0}
-  Mission7: {fileID: 0}
-  Mission8: {fileID: 0}
-  Mission9: {fileID: 0}
-  BookEnding1: {fileID: 0}
-  BookEnding2: {fileID: 0}
-  BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
-  cnt: 0
-  b1: 1
-  b2: 1
-  b3: 1
 --- !u!114 &1353181709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,7 +953,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1353181708}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dental, Assembly-CSharp
         m_MethodName: OnNextClick
         m_Mode: 1
@@ -1044,6 +1003,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353181706}
   m_CullTransparentMesh: 1
+--- !u!114 &1353181712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353181706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62842e19dcb2ac242974ef5da2a99555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Book: {fileID: 283453088}
+  BookStart:
+  - {fileID: 868964348}
+  - {fileID: 1694644248}
+  - {fileID: 29645235}
+  - {fileID: 1595900511}
+  - {fileID: 1752294891}
+  BookEnding1: {fileID: 0}
+  Success1: {fileID: 0}
+  cnt: 0
 --- !u!1 &1595900511
 GameObject:
   m_ObjectHideFlags: 0

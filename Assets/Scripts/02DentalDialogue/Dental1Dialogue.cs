@@ -64,4 +64,13 @@ public class Dental1Dialogue : MonoBehaviour
         }
 
     }
+
+  /*  void nextButtonActive()
+    {
+        GameObject obj = EventSystem.current.currentSelectedGameObject;
+        if (textComponent.setActive(true))
+        {
+            //btn setActive false;
+        }
+    }*/
 }
