@@ -11,25 +11,41 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-
-            if (DentalMission.DenState[i] == 1)
+            if (EyeMission.EyeState[i] == 1)
             {
                 ClearCard[i].SetActive(true);
 
-                Vector3 po = ClearCard[i].transform.localPosition;
+                /*Vector3 po = ClearCard[i].transform.localPosition;
                 po.x = 0;
                 po.y = 0;
                 ClearCard[i].transform.localPosition = po;
-                transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+                transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);*/
             }
-            /*if (DentalMission.DenState[i] == 1)  
+            // ENT
+            if (ENTMission.ENTState[i] == 1)
             {
-                ClearCard[(i+3)].SetActive(true);
+                ClearCard[(i + 3)].SetActive(true);
+
+                /*Vector3 po = ClearCard[i].transform.localPosition;
+                po.x = 0;
+                po.y = 0;
+                ClearCard[i].transform.localPosition = po;
+                transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);*/
             }
-            if (DentalMission.DenState[i] == 1)  
+
+
+            if (DentalMission.DenState[i] == 1)
             {
                 ClearCard[(i+6)].SetActive(true);
-            }*/
+
+                /*Vector3 po = ClearCard[i].transform.localPosition;
+                po.x = 0;
+                po.y = 0;
+                ClearCard[i].transform.localPosition = po;
+                transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);*/
+            }
+
+            
         }
     }
 }

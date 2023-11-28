@@ -50,6 +50,11 @@ public class Dental : MonoBehaviour
 
     public void ReadyCard(bool b1, bool b2, bool b3)
     {
+        if (b1 == false && b2 == false && b3 == false)
+        {
+            SceneManager.LoadScene("3_Main");
+        }
+
         DentalCard1.SetActive(b1);
         DentalCard2.SetActive(b2);
         DentalCard3.SetActive(b3);
@@ -75,7 +80,7 @@ public class Dental : MonoBehaviour
             SelectedCard.transform.localPosition = position;
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
             //cnt = 1;
             
             
@@ -96,7 +101,7 @@ public class Dental : MonoBehaviour
             SelectedCard.transform.localPosition = position;
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
         }
 
         // choice 3
@@ -114,7 +119,7 @@ public class Dental : MonoBehaviour
             SelectedCard.transform.localPosition = position;
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
         }
 
         cnt++;

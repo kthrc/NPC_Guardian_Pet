@@ -40,6 +40,8 @@ public class ENTMission : MonoBehaviour
     public GameObject Success2;
     public GameObject Success3;
 
+    public static int[] ENTState = new int[9];
+
     Vector2 startingPos; // 진동 효과 위해서 넣어놓음222 (구현 안 됨 ㅠ)
 
     void Awake()
@@ -159,6 +161,7 @@ public class ENTMission : MonoBehaviour
             M3.SetActive(false);
             Success1.SetActive(true); // -> 
 
+            ENTState[0] = 1;
         }
 
         if (clickObj == M3_DCard2)
@@ -202,6 +205,7 @@ public class ENTMission : MonoBehaviour
             M3.SetActive(false);
             Success2.SetActive(true); // -> 
 
+            ENTState[1] = 1;
         }
 
         if (clickObj == M3_DCard3)
@@ -243,6 +247,7 @@ public class ENTMission : MonoBehaviour
             M3.SetActive(false);
             Success3.SetActive(true); // -> 
 
+            ENTState[2] = 1;
         }
     }
 }

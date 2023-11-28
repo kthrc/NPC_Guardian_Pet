@@ -149,6 +149,7 @@ public class DentalMission : MonoBehaviour
     //M3
     public void OnM3Click()
     {
+        
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
         if (clickObj == M3_DCard1) // -> 정답
@@ -162,6 +163,7 @@ public class DentalMission : MonoBehaviour
             Success1.SetActive(true); // -> 
 
             DenState[0] = 1;
+            //Debug.Log("Card1 value : " + DenState[0]);
         }
 
         if (clickObj == M3_DCard2)
@@ -184,6 +186,8 @@ public class DentalMission : MonoBehaviour
 
     public void OnM6Click()
     {
+   
+
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
         if (clickObj == M3_DCard1)
@@ -219,6 +223,7 @@ public class DentalMission : MonoBehaviour
 
     public void OnM9Click()
     {
+       
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
         if (clickObj == M3_DCard1)
