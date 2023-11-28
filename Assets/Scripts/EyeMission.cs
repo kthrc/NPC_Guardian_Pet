@@ -62,13 +62,13 @@ public class EyeMission : MonoBehaviour
 
         if (clickObject == M1_Dental) // X 출력하고 펫이 설명해줘야됨
         {
-            M1_XBtn1.SetActive(true); //X출력
+            M1_XBtn2.SetActive(true); //X출력
             //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
         if (clickObject == M1_ENT) // X 출력하고 펫이 설명해줘야됨
         {
-            M1_XBtn2.SetActive(true); //X출력
+            M1_XBtn1.SetActive(true); //X출력
             //GuardianPetText.text = "다시 한 번 생각해봐";
         }
 
@@ -157,9 +157,9 @@ public class EyeMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            EyeState[1] = 1;
+            
             Success1.SetActive(true); // 해결
-
+            EyeState[0] = 1;
             //OnClickToAnother();
         }
 
@@ -196,7 +196,7 @@ public class EyeMission : MonoBehaviour
 
             // 다음으로 넘어감 (펫 획득 UI!)
             M3.SetActive(false);
-            EyeState[2] = 1;
+            EyeState[1] = 1;
             Success2.SetActive(true); // -> 
         }
 

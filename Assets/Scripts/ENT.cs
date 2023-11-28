@@ -56,6 +56,11 @@ public class ENT : MonoBehaviour
     // Start is called before the first frame update
     public void ReadyCard(bool b1, bool b2, bool b3)
     {
+        if (b1 == false && b2 == false && b3 == false)
+        {
+            SceneManager.LoadScene("3_Main");
+        }
+
         ENTCard1.SetActive(b1);
         ENTCard2.SetActive(b2);
         ENTCard3.SetActive(b3);

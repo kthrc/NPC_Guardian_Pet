@@ -62,9 +62,15 @@ public class Eye : MonoBehaviour
 
     public void ReadyCard(bool b1, bool b2, bool b3)
     {
+        if (b1 == false && b2 == false && b3 == false)
+        {
+            SceneManager.LoadScene("3_Main");
+        }
+
         EyeCard1.SetActive(b1);
         EyeCard2.SetActive(b2);
         EyeCard3.SetActive(b3);
+
 
     }
     public void Awake()

@@ -870,7 +870,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 6e3ce4353febf83419a7f4e6d2708322, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4198,7 +4198,7 @@ GameObject:
   - component: {fileID: 559187244}
   - component: {fileID: 559187243}
   - component: {fileID: 559187242}
-  - component: {fileID: 559187241}
+  - component: {fileID: 559187246}
   m_Layer: 5
   m_Name: M3_DCard2
   m_TagString: Untagged
@@ -4206,39 +4206,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &559187241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559187240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7477d088cd19fc2439c89a396117a969, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  M1: {fileID: 1882756193}
-  M2: {fileID: 2120736890}
-  M3: {fileID: 591956442}
-  M1_Eye: {fileID: 1856872661}
-  M1_ENT: {fileID: 663963272}
-  M1_Dental: {fileID: 478341445}
-  M1_OBtn: {fileID: 713457184}
-  M1_XBtn1: {fileID: 228358550}
-  M1_XBtn2: {fileID: 839184904}
-  GuardianPetText: {fileID: 1063428485}
-  M2_O: {fileID: 1524697566}
-  M2_X: {fileID: 1507747803}
-  M3_DCard1: {fileID: 1332353117}
-  M3_DCard2: {fileID: 559187240}
-  M3_DCard3: {fileID: 943360881}
-  M3_OBtn: {fileID: 713457184}
-  M3_XBtn1: {fileID: 228358550}
-  M3_XBtn2: {fileID: 839184904}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
 --- !u!114 &559187242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4283,8 +4250,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 559187241}
-        m_TargetAssemblyTypeName: DentalMission, Assembly-CSharp
+      - m_Target: {fileID: 559187246}
+        m_TargetAssemblyTypeName: EyeMission, Assembly-CSharp
         m_MethodName: OnM3Click
         m_Mode: 1
         m_Arguments:
@@ -4353,6 +4320,39 @@ RectTransform:
   m_AnchoredPosition: {x: 2000, y: 2500}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &559187246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559187240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9c86225be7048498c3469c73f531cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  M1: {fileID: 0}
+  M2: {fileID: 2120736890}
+  M3: {fileID: 591956442}
+  M1_Dental: {fileID: 0}
+  M1_ENT: {fileID: 0}
+  M1_Eye: {fileID: 0}
+  M1_OBtn: {fileID: 0}
+  M1_XBtn1: {fileID: 0}
+  M1_XBtn2: {fileID: 0}
+  GuardianPetText: {fileID: 0}
+  M2_O: {fileID: 0}
+  M2_X: {fileID: 0}
+  M3_DCard1: {fileID: 1332353117}
+  M3_DCard2: {fileID: 559187240}
+  M3_DCard3: {fileID: 943360881}
+  M3_OBtn: {fileID: 713457184}
+  M3_XBtn1: {fileID: 228358550}
+  M3_XBtn2: {fileID: 839184904}
+  Success1: {fileID: 1688033873}
+  Success2: {fileID: 611928012}
+  Success3: {fileID: 1134375641}
 --- !u!1 &591956442
 GameObject:
   m_ObjectHideFlags: 0
@@ -5571,7 +5571,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 6e3ce4353febf83419a7f4e6d2708322, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7047,7 +7047,7 @@ GameObject:
   - component: {fileID: 943360886}
   - component: {fileID: 943360885}
   - component: {fileID: 943360884}
-  - component: {fileID: 943360883}
+  - component: {fileID: 943360887}
   m_Layer: 5
   m_Name: M3_DCard3
   m_TagString: Untagged
@@ -7075,39 +7075,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3300, y: 2500}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &943360883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943360881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7477d088cd19fc2439c89a396117a969, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  M1: {fileID: 1882756193}
-  M2: {fileID: 2120736890}
-  M3: {fileID: 0}
-  M1_Eye: {fileID: 1856872661}
-  M1_ENT: {fileID: 663963272}
-  M1_Dental: {fileID: 478341445}
-  M1_OBtn: {fileID: 713457184}
-  M1_XBtn1: {fileID: 228358550}
-  M1_XBtn2: {fileID: 839184904}
-  GuardianPetText: {fileID: 1063428485}
-  M2_O: {fileID: 1524697566}
-  M2_X: {fileID: 1507747803}
-  M3_DCard1: {fileID: 1332353117}
-  M3_DCard2: {fileID: 559187240}
-  M3_DCard3: {fileID: 943360881}
-  M3_OBtn: {fileID: 713457184}
-  M3_XBtn1: {fileID: 228358550}
-  M3_XBtn2: {fileID: 839184904}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
 --- !u!114 &943360884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7152,8 +7119,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 943360883}
-        m_TargetAssemblyTypeName: DentalMission, Assembly-CSharp
+      - m_Target: {fileID: 943360887}
+        m_TargetAssemblyTypeName: EyeMission, Assembly-CSharp
         m_MethodName: OnM3Click
         m_Mode: 1
         m_Arguments:
@@ -7202,6 +7169,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943360881}
   m_CullTransparentMesh: 1
+--- !u!114 &943360887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943360881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9c86225be7048498c3469c73f531cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  M1: {fileID: 0}
+  M2: {fileID: 0}
+  M3: {fileID: 591956442}
+  M1_Dental: {fileID: 0}
+  M1_ENT: {fileID: 0}
+  M1_Eye: {fileID: 0}
+  M1_OBtn: {fileID: 0}
+  M1_XBtn1: {fileID: 0}
+  M1_XBtn2: {fileID: 0}
+  GuardianPetText: {fileID: 0}
+  M2_O: {fileID: 0}
+  M2_X: {fileID: 0}
+  M3_DCard1: {fileID: 1332353117}
+  M3_DCard2: {fileID: 559187240}
+  M3_DCard3: {fileID: 943360881}
+  M3_OBtn: {fileID: 713457184}
+  M3_XBtn1: {fileID: 228358550}
+  M3_XBtn2: {fileID: 839184904}
+  Success1: {fileID: 1688033873}
+  Success2: {fileID: 611928012}
+  Success3: {fileID: 1134375641}
 --- !u!1 &955517515
 GameObject:
   m_ObjectHideFlags: 0
@@ -9748,7 +9748,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: fd7cd8063c4a9c1479f8025cb1238ca3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9932,9 +9932,9 @@ MonoBehaviour:
   BookEnding1: {fileID: 0}
   BookEnding2: {fileID: 0}
   BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
+  Success1: {fileID: 1688033873}
+  Success2: {fileID: 611928012}
+  Success3: {fileID: 1134375641}
   cnt: 0
   b1: 1
   b2: 1
@@ -10177,7 +10177,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: fd7cd8063c4a9c1479f8025cb1238ca3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10370,7 +10370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1261503246
 Transform:
   m_ObjectHideFlags: 0
@@ -10890,7 +10890,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 74a555d1410b7a34f87ac37c3cf18eba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10998,7 +10998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1317347028
 Transform:
   m_ObjectHideFlags: 0
@@ -11477,9 +11477,9 @@ MonoBehaviour:
   M3_OBtn: {fileID: 713457184}
   M3_XBtn1: {fileID: 228358550}
   M3_XBtn2: {fileID: 839184904}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
+  Success1: {fileID: 1688033873}
+  Success2: {fileID: 611928012}
+  Success3: {fileID: 1134375641}
 --- !u!1 &1332656435
 GameObject:
   m_ObjectHideFlags: 0
@@ -11493,8 +11493,6 @@ GameObject:
   - component: {fileID: 1332656438}
   - component: {fileID: 1332656437}
   - component: {fileID: 1332656442}
-  - component: {fileID: 1332656441}
-  - component: {fileID: 1332656436}
   m_Layer: 5
   m_Name: M4_Eye
   m_TagString: Untagged
@@ -11502,39 +11500,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1332656436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332656435}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7477d088cd19fc2439c89a396117a969, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  M1: {fileID: 1198323695}
-  M2: {fileID: 0}
-  M3: {fileID: 0}
-  M1_Eye: {fileID: 1332656435}
-  M1_ENT: {fileID: 234904156}
-  M1_Dental: {fileID: 1665420658}
-  M1_OBtn: {fileID: 1262749833}
-  M1_XBtn1: {fileID: 224516173}
-  M1_XBtn2: {fileID: 1616905882}
-  GuardianPetText: {fileID: 1625576168}
-  M2_O: {fileID: 0}
-  M2_X: {fileID: 0}
-  M3_DCard1: {fileID: 0}
-  M3_DCard2: {fileID: 0}
-  M3_DCard3: {fileID: 0}
-  M3_OBtn: {fileID: 0}
-  M3_XBtn1: {fileID: 0}
-  M3_XBtn2: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
 --- !u!114 &1332656437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11649,47 +11614,6 @@ RectTransform:
   m_AnchoredPosition: {x: 750, y: 2500}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1332656441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332656435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1320646524600424aaad91b412c967f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EyeCard1: {fileID: 0}
-  EyeCard2: {fileID: 0}
-  EyeCard3: {fileID: 0}
-  SelectedCard: {fileID: 0}
-  Book: {fileID: 0}
-  Renderer: {fileID: 0}
-  Card1: {fileID: 0}
-  Card2: {fileID: 0}
-  Card3: {fileID: 0}
-  BookStart: []
-  Mission1: {fileID: 0}
-  Mission2: {fileID: 0}
-  Mission3: {fileID: 0}
-  Mission4: {fileID: 0}
-  Mission5: {fileID: 0}
-  Mission6: {fileID: 0}
-  Mission7: {fileID: 0}
-  Mission8: {fileID: 0}
-  Mission9: {fileID: 0}
-  BookEnding1: {fileID: 0}
-  BookEnding2: {fileID: 0}
-  BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
-  cnt: 0
-  b1: 1
-  b2: 1
-  b3: 1
 --- !u!114 &1332656442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11708,9 +11632,9 @@ MonoBehaviour:
   M1_Dental: {fileID: 1665420658}
   M1_ENT: {fileID: 234904156}
   M1_Eye: {fileID: 1332656435}
-  M1_OBtn: {fileID: 0}
-  M1_XBtn1: {fileID: 0}
-  M1_XBtn2: {fileID: 0}
+  M1_OBtn: {fileID: 1262749833}
+  M1_XBtn1: {fileID: 224516173}
+  M1_XBtn2: {fileID: 1616905882}
   GuardianPetText: {fileID: 0}
   M2_O: {fileID: 0}
   M2_X: {fileID: 0}
@@ -12897,8 +12821,6 @@ GameObject:
   - component: {fileID: 1524697569}
   - component: {fileID: 1524697568}
   - component: {fileID: 1524697573}
-  - component: {fileID: 1524697572}
-  - component: {fileID: 1524697567}
   m_Layer: 5
   m_Name: M2_O
   m_TagString: Untagged
@@ -12906,39 +12828,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1524697567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524697566}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7477d088cd19fc2439c89a396117a969, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  M1: {fileID: 1882756193}
-  M2: {fileID: 2120736890}
-  M3: {fileID: 591956442}
-  M1_Eye: {fileID: 1856872661}
-  M1_ENT: {fileID: 663963272}
-  M1_Dental: {fileID: 478341445}
-  M1_OBtn: {fileID: 912198933}
-  M1_XBtn1: {fileID: 1352899283}
-  M1_XBtn2: {fileID: 213337479}
-  GuardianPetText: {fileID: 1737304937}
-  M2_O: {fileID: 1524697566}
-  M2_X: {fileID: 1507747803}
-  M3_DCard1: {fileID: 0}
-  M3_DCard2: {fileID: 0}
-  M3_DCard3: {fileID: 0}
-  M3_OBtn: {fileID: 0}
-  M3_XBtn1: {fileID: 0}
-  M3_XBtn2: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
 --- !u!114 &1524697568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13053,47 +12942,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1200, y: 2500}
   m_SizeDelta: {x: 400, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1524697572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524697566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1320646524600424aaad91b412c967f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EyeCard1: {fileID: 0}
-  EyeCard2: {fileID: 0}
-  EyeCard3: {fileID: 0}
-  SelectedCard: {fileID: 0}
-  Book: {fileID: 0}
-  Renderer: {fileID: 0}
-  Card1: {fileID: 0}
-  Card2: {fileID: 0}
-  Card3: {fileID: 0}
-  BookStart: []
-  Mission1: {fileID: 0}
-  Mission2: {fileID: 0}
-  Mission3: {fileID: 0}
-  Mission4: {fileID: 0}
-  Mission5: {fileID: 0}
-  Mission6: {fileID: 0}
-  Mission7: {fileID: 0}
-  Mission8: {fileID: 0}
-  Mission9: {fileID: 0}
-  BookEnding1: {fileID: 0}
-  BookEnding2: {fileID: 0}
-  BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
-  cnt: 0
-  b1: 1
-  b2: 1
-  b3: 1
 --- !u!114 &1524697573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14295,9 +14143,9 @@ MonoBehaviour:
   BookEnding1: {fileID: 0}
   BookEnding2: {fileID: 0}
   BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
+  Success1: {fileID: 1688033873}
+  Success2: {fileID: 611928012}
+  Success3: {fileID: 1134375641}
   cnt: 0
   b1: 1
   b2: 1
@@ -15768,9 +15616,9 @@ MonoBehaviour:
   BookEnding1: {fileID: 0}
   BookEnding2: {fileID: 0}
   BookEnding3: {fileID: 0}
-  Success1: {fileID: 0}
-  Success2: {fileID: 0}
-  Success3: {fileID: 0}
+  Success1: {fileID: 1688033873}
+  Success2: {fileID: 611928012}
+  Success3: {fileID: 1134375641}
   cnt: 0
   b1: 1
   b2: 1
@@ -15933,7 +15781,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 74a555d1410b7a34f87ac37c3cf18eba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17877,7 +17725,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 74a555d1410b7a34f87ac37c3cf18eba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
