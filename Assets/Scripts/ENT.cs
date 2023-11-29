@@ -72,7 +72,7 @@ public class ENT : MonoBehaviour
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
         // choice 1
-        if (cnt == 0 && clickObject.name == "ENTCard1") //
+        if (clickObject.name == "ENTCard1") //
         {
             ENTCard1.SetActive(false);
             ENTCard2.SetActive(false);
@@ -92,14 +92,14 @@ public class ENT : MonoBehaviour
             SelectedCard.transform.localPosition = position;
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
             //cnt = 1;
 
 
         }
 
         // choice 2
-        if (cnt == 0 && clickObject.name == "ENTCard2") //
+        if (clickObject.name == "ENTCard2") //
         {
             ENTCard1.SetActive(false);
             ENTCard2.SetActive(false);
@@ -113,11 +113,11 @@ public class ENT : MonoBehaviour
             SelectedCard.transform.localPosition = position;
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
         }
 
         // choice 3
-        if (cnt == 0 && clickObject.name == "ENTCard3") //
+        if (clickObject.name == "ENTCard3") //
         {
             ENTCard1.SetActive(false);
             ENTCard2.SetActive(false);
@@ -131,12 +131,12 @@ public class ENT : MonoBehaviour
             SelectedCard.transform.localPosition = position;
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-            SelectedCard.SetActive(true);
+            //SelectedCard.SetActive(true);
         }
 
         cnt++;
         Debug.Log("Click " + cnt);
-        if (cnt == 2)
+        if (cnt == 1)
         {
 
             OnDoubleClick();
@@ -150,7 +150,7 @@ public class ENT : MonoBehaviour
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
         // Choice Card1
-        if (clickObj.name == "ENTCard1" && SelectedCard == ENTCard1 && cnt == 2) //
+        if (clickObj.name == "ENTCard1" && SelectedCard == ENTCard1) //
         {
             ENTCard1.SetActive(false);
             ENTCard2.SetActive(false);
@@ -173,7 +173,7 @@ public class ENT : MonoBehaviour
 
         }
         // Choice Card2
-        if (clickObj.name == "ENTCard2" && SelectedCard == ENTCard2 && cnt == 2) //
+        if (clickObj.name == "ENTCard2" && SelectedCard == ENTCard2) //
         {
             ENTCard1.SetActive(false);
             ENTCard2.SetActive(false);
@@ -195,7 +195,7 @@ public class ENT : MonoBehaviour
 
         }
         // Choice Card3
-        if (clickObj.name == "ENTCard3" && SelectedCard == ENTCard3 && cnt == 2) //
+        if (clickObj.name == "ENTCard3" && SelectedCard == ENTCard3) //
         {
             ENTCard1.SetActive(false);
             ENTCard2.SetActive(false);

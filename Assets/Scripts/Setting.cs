@@ -34,11 +34,13 @@ public class Setting : MonoBehaviour
         {
 
             SettingPop.SetActive(true);
+            //SoundManager.GetComponent<SoundManager>().OnSfx();
         }
 
         if (clickObject.name == "XBtn") //
         {
             SettingPop.SetActive(false);
+            SoundManager.GetComponent<SoundManager>().OnSfx();
         }
 
         if (clickObject.name == "SoundBtn") //
@@ -57,18 +59,18 @@ public class Setting : MonoBehaviour
         if (clickObject.name == "CardBtn") //
         {
             CardPop.SetActive(true);
-
+            SoundManager.GetComponent<SoundManager>().OnSfx();
         }
 
         if (clickObject.name == "CardXBtn") //
         {
             CardPop.SetActive(false);
-
+            SoundManager.GetComponent<SoundManager>().OnSfx();
         }
         if (clickObject.name == "CardChangeBtn") //
         {
             CardPop.SetActive(false);
-
+            SoundManager.GetComponent<SoundManager>().OnSfx();
         }
         if (clickObject == CloseupCardXBtn)
         {

@@ -65,7 +65,7 @@ public class Dental : MonoBehaviour
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
         // choice 1
-        if (cnt == 0 && clickObject.name == "DentalCard1") //
+        if (clickObject.name == "DentalCard1") //
         {
             DentalCard1.SetActive(false);
             DentalCard2.SetActive(false);
@@ -87,7 +87,7 @@ public class Dental : MonoBehaviour
         }
 
         // choice 2
-        if (cnt == 0 && clickObject.name == "DentalCard2") //
+        if (clickObject.name == "DentalCard2") //
         {
             DentalCard1.SetActive(false);
             DentalCard2.SetActive(false);
@@ -105,7 +105,7 @@ public class Dental : MonoBehaviour
         }
 
         // choice 3
-        if (cnt == 0 && clickObject.name == "DentalCard3") //
+        if (clickObject.name == "DentalCard3") //
         {
             DentalCard1.SetActive(false);
             DentalCard2.SetActive(false);
@@ -124,7 +124,7 @@ public class Dental : MonoBehaviour
 
         cnt++;
         Debug.Log("Click " + cnt);
-        if(cnt == 2)
+        if(cnt == 1)
         {
             
             OnDoubleClick();
@@ -138,7 +138,7 @@ public class Dental : MonoBehaviour
         GameObject clickObj = EventSystem.current.currentSelectedGameObject;
 
         // Choice Card1 증상카드1
-        if (clickObj.name == "DentalCard1" && SelectedCard == DentalCard1 && cnt == 2) //
+        if (clickObj.name == "DentalCard1" && SelectedCard == DentalCard1) //
         {
             DentalCard1.SetActive(false);
             DentalCard2.SetActive(false);
@@ -167,7 +167,7 @@ public class Dental : MonoBehaviour
 
         }
         // Choice Card2 증상카드 2
-        if (clickObj.name == "DentalCard2" && SelectedCard == DentalCard2 && cnt == 2) //
+        if (clickObj.name == "DentalCard2" && SelectedCard == DentalCard2) //
         {
             DentalCard1.SetActive(false);
             DentalCard2.SetActive(false);
@@ -193,7 +193,7 @@ public class Dental : MonoBehaviour
             Book.SetActive(true); // 스토리로 이동
         }
         // Choice Card3 증상카드 3
-        if (clickObj.name == "DentalCard3" && SelectedCard == DentalCard3 && cnt == 2) //
+        if (clickObj.name == "DentalCard3" && SelectedCard == DentalCard3) //
         {
             DentalCard1.SetActive(false);
             DentalCard2.SetActive(false);
