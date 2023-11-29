@@ -137,7 +137,7 @@ public class Eye : MonoBehaviour
         if (cnt == 1)
         {
 
-            Invoke("OnDoubleClick", 2f);
+            Invoke("OnDoubleClick", 0.02f);
         }
     }
 
