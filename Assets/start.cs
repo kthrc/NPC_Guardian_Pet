@@ -9,6 +9,6 @@ public class start : MonoBehaviour
 {
     public void starPrologue()
     {
-        SceneManager.LoadScene("2_Prologue");
+        SceneManager.LoadScene("3_Main");
     }
 }

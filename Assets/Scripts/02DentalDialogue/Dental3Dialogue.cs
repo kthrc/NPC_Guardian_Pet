@@ -7,6 +7,7 @@ using System;
 
 public class Dental3Dialogue : MonoBehaviour
 {
+    public GameObject nextbtn;
     public TextMeshProUGUI textComponent;
     public string[] senetences;
     public float textSpeed;
@@ -54,12 +55,14 @@ public class Dental3Dialogue : MonoBehaviour
     {
         if (idx < senetences.Length - 1)
         {
+            nextbtn.SetActive(false);
             idx++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
         {
+            nextbtn.SetActive(true);
             gameObject.SetActive(false);
         }
 

@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1735ed11655a914395c8c5b119df7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextbtn: {fileID: 0}
   textComponent: {fileID: 596929352}
   senetences:
   - "\uB098\uB294 \uBA3C\uC800 \uC2DC\uC791\uC218\uD638\uD3AB\uC774 \uB9D0\uD574\uC900
@@ -870,53 +871,6 @@ Transform:
   m_Father: {fileID: 283453090}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1003499934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1003499936}
-  - component: {fileID: 1003499937}
-  m_Layer: 0
-  m_Name: click
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1003499936
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003499934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.015991211, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1003499937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003499934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c00955ce42d7b54887d3e33d9771442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Book: {fileID: 0}
-  BookStart: []
-  nextBtn: {fileID: 0}
 --- !u!1 &1050819904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,9 +1039,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 62842e19dcb2ac242974ef5da2a99555, type: 3}
-        m_TargetAssemblyTypeName: prologueScene, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1353181712}
+        m_TargetAssemblyTypeName: Prologue, Assembly-CSharp
+        m_MethodName: Next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

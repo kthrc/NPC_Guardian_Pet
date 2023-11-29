@@ -7,6 +7,7 @@ using System;
 
 public class Dental1Dialogue : MonoBehaviour
 {
+    public GameObject nextbtn;
     public TextMeshProUGUI textComponent;
     public string[] senetences;
     public float textSpeed;
@@ -54,23 +55,16 @@ public class Dental1Dialogue : MonoBehaviour
     {
         if (idx < senetences.Length - 1)
         {
+            nextbtn.SetActive(false);
             idx++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
         {
+            nextbtn.SetActive(true);
             gameObject.SetActive(false);
         }
 
     }
-
-  /*  void nextButtonActive()
-    {
-        GameObject obj = EventSystem.current.currentSelectedGameObject;
-        if (textComponent.setActive(true))
-        {
-            //btn setActive false;
-        }
-    }*/
 }
